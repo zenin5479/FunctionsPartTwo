@@ -31,11 +31,45 @@ namespace FunctionsPartTwo
          Console.WriteLine("Поиск чётных чисел в одномерном массиве случайными положительными трёхзначными числами");
          Console.WriteLine("--------------------------------------------------------------------------------------------------");
          Console.WriteLine("Массив из случайных положительных трехзначных чисел:");
+
+
          int a = new Random().Next(1, 10);
          int[] chance = new int[a];
+         // Метод заполнения массива случайными трехзначными положит числами
+         void FillArray(int[] array)
+         {
+            Random rand = new Random();
+            for (int i = 0; i < array.Length; i++)
+            {
+               array[i] = rand.Next(100, 998);
+            }
+         }
          FillArray(chance);
+
+         // Метод распечатки массива
+         void PrintArray(int[] array)
+         {
+            for (int i = 0; i < array.Length; i++)
+            {
+               Console.Write(array[i] + " ");
+            }
+            Console.WriteLine();
+         }
          PrintArray(chance);
-         Console.WriteLine("количество четных чисел в массиве = " + PrintArrayEven(chance)); Console.WriteLine("");
+
+         // Метод подсчета кол четных значений в массиве
+         int PrintArrayEven(int[] array)
+         {
+            int count = 0;
+            for (int i = 0; i < array.Length; i++)
+            {
+               if (array[i] % 2 == 0) count++;
+            }
+            return count;
+         }
+
+
+         Console.WriteLine("Количество четных чисел в массиве = " + PrintArrayEven(chance));
 
          Console.WriteLine("-------------------------------------------------------------------------------------------------------------------");
          Console.WriteLine("Нахождение суммы элементов, расположенных на нечётных индексах одномерного массива, заполненного случайными числами");
@@ -49,36 +83,6 @@ namespace FunctionsPartTwo
          Console.WriteLine("");
 
          Console.WriteLine("сумма элементов на нечетных позициях = " + PrintArraySumOddPos(array)); Console.WriteLine("");
-         // Метод заполнения массива случайными трехзначными положит числами
-         void FillArray(int[] array)
-         {
-            Random rand = new Random();
-            for (int i = 0; i < array.Length; i++)
-            {
-               array[i] = rand.Next(100, 998);
-            }
-         }
-
-         // Метод распечатки массива
-         void PrintArray(int[] array)
-         {
-            for (int i = 0; i < array.Length; i++)
-            {
-               Console.Write(array[i] + " ");
-            }
-            Console.WriteLine();
-         }
-
-         // Метод подсчета кол четных значений в массиве
-         int PrintArrayEven(int[] array)
-         {
-            int count = 0;
-            for (int i = 0; i < array.Length; i++)
-            {
-               if (array[i] % 2 == 0) count++;
-            }
-            return count;
-         }
 
          // Метод вычисления суммы значений элементов массива на нечетных позициях
          int PrintArraySumOddPos(int[] array)
