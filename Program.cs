@@ -61,7 +61,7 @@ namespace FunctionsPartTwo
          }
 
          // Метод подсчета кол четных значений в массиве
-         int PrintArrayEven(int[] array)          
+         int PrintArrayEven(int[] array)
          {
             int count = 0;
             for (int i = 0; i < array.Length; i++)
@@ -71,7 +71,8 @@ namespace FunctionsPartTwo
             return count;
          }
 
-         int PrintArraySumOddPos(int[] array)    // метод вычисления суммы значений элементов массива на нечетных позициях
+         // Метод вычисления суммы значений элементов массива на нечетных позициях
+         int PrintArraySumOddPos(int[] array)
          {
             int sum = 0;
             for (int i = 0; i < array.Length; i++)
