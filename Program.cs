@@ -33,7 +33,9 @@ namespace FunctionsPartTwo
          Console.WriteLine("Массив из случайных положительных трехзначных чисел:");
          int a = new Random().Next(1, 10);
          int[] chance = new int[a];
-
+         FillArray(chance);
+         PrintArray(chance);
+         Console.WriteLine("количество четных чисел в массиве = " + PrintArrayEven(chance)); Console.WriteLine("");
 
          Console.WriteLine("-------------------------------------------------------------------------------------------------------------------");
          Console.WriteLine("Нахождение суммы элементов, расположенных на нечётных индексах одномерного массива, заполненного случайными числами");
@@ -45,7 +47,7 @@ namespace FunctionsPartTwo
          FillArray(array);
          PrintArray(array);
          Console.WriteLine("");
-         Console.WriteLine("количество четных чисел в массиве = " + PrintArrayEven(array)); Console.WriteLine("");
+
          Console.WriteLine("сумма элементов на нечетных позициях = " + PrintArraySumOddPos(array)); Console.WriteLine("");
          // Метод заполнения массива случайными трехзначными положит числами
          void FillArray(int[] array)
