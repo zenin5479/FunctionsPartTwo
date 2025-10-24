@@ -40,8 +40,8 @@ namespace FunctionsPartTwo
          Console.WriteLine("");
          Console.WriteLine("количество четных чисел в массиве = " + PrintArrayEven(array)); Console.WriteLine("");
          Console.WriteLine("сумма элементов на нечетных позициях = " + PrintArraySumOddPos(array)); Console.WriteLine("");
-
-         void FillArray(int[] array)                 // метод заполнения массива случайными трехзначными положит числами
+         // Метод заполнения массива случайными трехзначными положит числами
+         void FillArray(int[] array)
          {
             Random rand = new Random();
             for (int i = 0; i < array.Length; i++)
@@ -50,7 +50,8 @@ namespace FunctionsPartTwo
             }
          }
 
-         void PrintArray(int[] array)                // метод распечатки массива
+         // Метод распечатки массива
+         void PrintArray(int[] array)
          {
             for (int i = 0; i < array.Length; i++)
             {
@@ -59,7 +60,8 @@ namespace FunctionsPartTwo
             Console.WriteLine();
          }
 
-         int PrintArrayEven(int[] array)          // метод подсчета кол четных значений в массиве
+         // Метод подсчета кол четных значений в массиве
+         int PrintArrayEven(int[] array)          
          {
             int count = 0;
             for (int i = 0; i < array.Length; i++)
