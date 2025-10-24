@@ -137,32 +137,32 @@ namespace FunctionsPartTwo
             Console.WriteLine("max - min = " + (max - min)); Console.WriteLine("");
          }
 
-
-
          Console.WriteLine(" ДОПОЛНИТЕЛЬНЫЕ ЗАДАНИЯ");
-
          Console.WriteLine(" ЗАДАЧА 2----------------------------------------------------------------------------------------------------------------------- ");
          Console.WriteLine(" На вход подаются два числа случайной длины. Найдите произведение каждого разряда первого числа на каждый разряд второго. Ответ запишите в массив. 24, 132 -> {2, 6, 4, 4, 12, 8}");
          Console.WriteLine(" ------------------------------------------------------------------------------------------------------------------------------- ");
-
+         // Задание чисел
          Random rnd = new Random();
-         int L1 = rnd.Next(-1000, 1000);                           // задание чисел
+         int L1 = rnd.Next(-1000, 1000);
          int L2 = rnd.Next(0 - 1000, 1000);
 
          int L3 = KolNumber(L1) * KolNumber(L2);
          int[] arrayL1L2 = new int[L3];
-         int[] arrayL1 = new int[KolNumber(L1)];             // задается размер массива с помощью метода определения кол цифр в числе
+         // задается размер массива с помощью метода определения кол цифр в числе
+         int[] arrayL1 = new int[KolNumber(L1)];
          int[] arrayL2 = new int[KolNumber(L2)];
-         FillArrayN(arrayL1, L1);                             // заполнение массива цифрами из числа
+         // заполнение массива цифрами из числа
+         FillArrayN(arrayL1, L1);
          FillArrayN(arrayL2, L2);
-         PrintArrayN(arrayL1);                                   // распечатка массива, состоящий из цифр числа
+         // распечатка массива, состоящий из цифр числа
+         PrintArrayN(arrayL1);
          PrintArrayN(arrayL2);
-         ArrayL1L2(arrayL1, arrayL2, arrayL1L2);                 // задается массив с перемноженными элементами исходныъх двух массивов
+         // задается массив с перемноженными элементами исходныъх двух массивов
+         ArrayL1L2(arrayL1, arrayL2, arrayL1L2);
          Console.WriteLine(" массив с перемноженными элементами");
          PrintArrayN(arrayL1L2);
-
-
-         void FillArrayN(int[] array, int L)                                  // метод заполнения массива цифрами из числа
+         // метод заполнения массива цифрами из числа
+         void FillArrayN(int[] array, int L)
          {
             for (int i = array.Length - 1; i >= 0; i--)
             {
