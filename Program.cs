@@ -145,23 +145,22 @@ namespace FunctionsPartTwo
          Random rnd = new Random();
          int L1 = rnd.Next(-1000, 1000);
          int L2 = rnd.Next(0 - 1000, 1000);
-
          int L3 = KolNumber(L1) * KolNumber(L2);
          int[] arrayL1L2 = new int[L3];
-         // задается размер массива с помощью метода определения кол цифр в числе
+         // Задается размер массива с помощью метода определения кол цифр в числе
          int[] arrayL1 = new int[KolNumber(L1)];
          int[] arrayL2 = new int[KolNumber(L2)];
-         // заполнение массива цифрами из числа
+         // Заполнение массива цифрами из числа
          FillArrayN(arrayL1, L1);
          FillArrayN(arrayL2, L2);
-         // распечатка массива, состоящий из цифр числа
+         // Распечатка массива, состоящий из цифр числа
          PrintArrayN(arrayL1);
          PrintArrayN(arrayL2);
-         // задается массив с перемноженными элементами исходныъх двух массивов
+         // Задается массив с перемноженными элементами исходныъх двух массивов
          ArrayL1L2(arrayL1, arrayL2, arrayL1L2);
          Console.WriteLine(" массив с перемноженными элементами");
          PrintArrayN(arrayL1L2);
-         // метод заполнения массива цифрами из числа
+         // Метод заполнения массива цифрами из числа
          void FillArrayN(int[] array, int L)
          {
             for (int i = array.Length - 1; i >= 0; i--)
@@ -172,7 +171,8 @@ namespace FunctionsPartTwo
             }
          }
 
-         void PrintArrayN(int[] array)                                   // метод распечатки массива
+         // Метод распечатки массива
+         void PrintArrayN(int[] array)
          {
             for (int i = 0; i < array.Length; i++)
             {
@@ -181,7 +181,8 @@ namespace FunctionsPartTwo
             Console.WriteLine();
          }
 
-         int KolNumber(int L)                        // метод определения кол цифр в числе
+         // Метод определения кол цифр в числе
+         int KolNumber(int L)
          {
             int count = 0;
             L = Math.Abs(L);
@@ -194,7 +195,8 @@ namespace FunctionsPartTwo
             return count;
          }
 
-         void ArrayL1L2(int[] arrayL1, int[] arrayL2, int[] arrayL1L2)                         // метод перемножения элементов массива, состоящих из цифр числа
+         // Метод перемножения элементов массива, состоящих из цифр числа
+         void ArrayL1L2(int[] arrayL1, int[] arrayL2, int[] arrayL1L2)
          {
             int k = 0;
             for (int i = 0; i < arrayL1.Length; i++)
@@ -212,13 +214,13 @@ namespace FunctionsPartTwo
          Console.WriteLine("  Задан массив из случайных цифр на 15 элементов. На вход подаётся трёхзначное натуральное число. Напишите программу, которая определяет, есть в массиве последовательность");
          Console.WriteLine("из трёх элементов, совпадающая с введённым числом. {0, 5, 6, 2, 7, 7, 8, 1, 1, 9} - 277 -> да  {4, 4, 3, 6, 7, 0, 8, 5, 1, 2} - 812 -> нет");
          Console.WriteLine(" ------------------------------------------------------------------------------------------------------------------------------- ");
-
          int numberH = rnd.Next(100, 998);
          Console.WriteLine(" на ввод подается трехзначное число:  " + numberH);
          int[] arrayy = new int[15];
          FillArrayy(arrayy);
          PrintArrayy(arrayy);
-         Sequence(arrayy, numberH);              // поиск последовательности
+         // Поиск последовательности
+         Sequence(arrayy, numberH);
 
          void FillArrayy(int[] array)                 // метод заполнения массива случайными трехзначными положит числами
          {
