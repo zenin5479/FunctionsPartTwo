@@ -37,11 +37,10 @@ namespace FunctionsPartTwo
          void FillArray(int[] series)
          {
             Random rand = new Random();
-            
             int i = 0;
             while (i < series.Length)
             {
-                series[i] = rand.Next(100, 999);
+               series[i] = rand.Next(100, 999);
                i++;
             }
          }
