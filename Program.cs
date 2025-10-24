@@ -82,9 +82,6 @@ namespace FunctionsPartTwo
             return sum;
          }
 
-
-
-
          Console.WriteLine(" Задача 38-------------------------------------------------------------------------------------------------------- ");
          Console.WriteLine(" Задайте массив вещественных чисел. Найдите разницу между максимальным и минимальным элементов массива. ");
          Console.WriteLine(" ----------------------------------------------------------------------------------------------------------------------- ");
@@ -97,8 +94,8 @@ namespace FunctionsPartTwo
          Console.WriteLine("");
          MaxMinusMinArray(array1);
 
-
-         void FillArrayD(double[] array)                 //  метод заполнения массива случайными вещественными числами
+         // Метод заполнения массива случайными вещественными числами
+         void FillArrayD(double[] array)
          {
             Random rand = new Random();
             for (int i = 0; i < array.Length; i++)
@@ -107,7 +104,8 @@ namespace FunctionsPartTwo
             }
          }
 
-         void PrintArrayD(double[] array)                       // метод распечатки массива
+         // Метод распечатки массива
+         void PrintArrayD(double[] array)
          {
             for (int i = 0; i < array.Length; i++)
             {
@@ -116,7 +114,8 @@ namespace FunctionsPartTwo
             Console.WriteLine();
          }
 
-         void MaxMinusMinArray(double[] array)                // метод нахождения разности максимального и минимального значений элементов массива
+         // Метод нахождения разности максимального и минимального значений элементов массива
+         void MaxMinusMinArray(double[] array)
          {
             double max = array[0];
             double min = array[0];
