@@ -222,7 +222,8 @@ namespace FunctionsPartTwo
          // Поиск последовательности
          Sequence(arrayy, numberH);
 
-         void FillArrayy(int[] array)                 // метод заполнения массива случайными трехзначными положит числами
+         // Метод заполнения массива случайными трехзначными положит числами
+         void FillArrayy(int[] array)
          {
             Random rand = new Random();
             for (int i = 0; i < array.Length; i++)
@@ -231,7 +232,8 @@ namespace FunctionsPartTwo
             }
          }
 
-         void PrintArrayy(int[] array)                // метод распечатки массива
+         // Метод распечатки массива
+         void PrintArrayy(int[] array)
          {
             for (int i = 0; i < array.Length; i++)
             {
@@ -240,7 +242,8 @@ namespace FunctionsPartTwo
             Console.WriteLine();
          }
 
-         async void Sequence(int[] array, int number)                 // метод определения есть в массиве последовательность из трех элементов
+         // Метод определения есть в массиве последовательность из трех элементов
+         void Sequence(int[] array, int number)
          {
             int num = number / 10;
             int a3 = number - num * 10;
