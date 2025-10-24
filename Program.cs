@@ -95,7 +95,7 @@ namespace FunctionsPartTwo
          PrintArray(array);
 
          // Метод вычисления суммы значений элементов массива расположенных по нечётным индексам
-         int PrintArraySumOddPos(int[] array)
+         int ArraySumOddPos(int[] array)
          {
             int sum = 0;
             for (int i = 0; i < array.Length; i++)
@@ -105,7 +105,7 @@ namespace FunctionsPartTwo
             return sum;
          }
 
-         Console.WriteLine("сумма элементов на нечетных позициях = " + PrintArraySumOddPos(array));
+         Console.WriteLine("сумма элементов на нечетных позициях = " + ArraySumOddPos(array));
          
          Console.WriteLine(" Задача 38-------------------------------------------------------------------------------------------------------- ");
          Console.WriteLine(" Задайте массив вещественных чисел. Найдите разницу между максимальным и минимальным элементов массива. ");
