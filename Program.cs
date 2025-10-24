@@ -31,17 +31,15 @@ namespace FunctionsPartTwo
          Console.WriteLine("Поиск чётных чисел в одномерном массиве случайными положительными трёхзначными числами");
          Console.WriteLine("--------------------------------------------------------------------------------------------------");
          Console.WriteLine("Массив из случайных положительных трехзначных чисел:");
-
-
          int a = new Random().Next(1, 10);
          int[] chance = new int[a];
          // Метод заполнения массива случайными трехзначными положит числами
-         void FillArray(int[] array)
+         void FillArray(int[] series)
          {
             Random rand = new Random();
-            for (int i = 0; i < array.Length; i++)
+            for (int i = 0; i < series.Length; i++)
             {
-               array[i] = rand.Next(100, 998);
+               series[i] = rand.Next(100, 999);
             }
          }
          FillArray(chance);
@@ -67,7 +65,6 @@ namespace FunctionsPartTwo
             }
             return count;
          }
-
 
          Console.WriteLine("Количество четных чисел в массиве = " + PrintArrayEven(chance));
 
