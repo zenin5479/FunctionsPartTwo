@@ -50,10 +50,13 @@ namespace FunctionsPartTwo
          // Метод распечатки массива
          void PrintArray(int[] group)
          {
-            for (int i = 0; i < group.Length; i++)
+            int i = 0;
+            while (i < group.Length)
             {
                Console.Write(group[i] + " ");
+               i++;
             }
+
             Console.WriteLine();
          }
 
