@@ -80,7 +80,9 @@ namespace FunctionsPartTwo
             return count;
          }
 
-         Console.WriteLine("Количество четных чисел в массиве = " + PrintArrayEven(chance));
+         int Itemize = PrintArrayEven(chance);
+
+         Console.WriteLine("Количество четных чисел в массиве = {0}",  Itemize );
 
          Console.WriteLine("-------------------------------------------------------------------------------------------------------------------");
          Console.WriteLine("Нахождение суммы элементов, расположенных на нечётных индексах одномерного массива, заполненного случайными числами");
