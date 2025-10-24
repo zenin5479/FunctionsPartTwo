@@ -6,7 +6,7 @@ namespace FunctionsPartTwo
     {
         static void Main()
         {
-            Console.WriteLine("Hello World!");
+           
         }
     }
 }
