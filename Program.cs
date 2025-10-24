@@ -88,24 +88,24 @@ namespace FunctionsPartTwo
          Console.WriteLine("------------------------------------------------------------------------------------------------------------------");
 
          Console.WriteLine("Массив случайных положительных чисел:");
-         int L = new Random().Next(10, 21);
-         int[] array = new int[L];
-         FillArray(array);
+         int b = new Random().Next(10, 21);
+         int[] assortment = new int[b];
+         FillArray(assortment);
 
-         PrintArray(array);
+         PrintArray(assortment);
 
          // Метод вычисления суммы значений элементов массива расположенных по нечётным индексам
-         int ArraySumOddPos(int[] array)
+         int ArraySumOddPos(int[] cluster)
          {
             int sum = 0;
-            for (int i = 0; i < array.Length; i++)
+            for (int i = 0; i < cluster.Length; i++)
             {
-               if (i % 2 != 0) sum += array[i];
+               if (i % 2 != 0) sum += cluster[i];
             }
             return sum;
          }
 
-         int group = PrintArrayEven(chance);
+         int group = ArraySumOddPos(assortment);
         Console.WriteLine("Сумма значений элементов массива расположенных по нечётным индексам = {0}", group);
          
          Console.WriteLine(" Задача 38-------------------------------------------------------------------------------------------------------- ");
