@@ -88,7 +88,7 @@ namespace FunctionsPartTwo
          Console.WriteLine("------------------------------------------------------------------------------------------------------------------");
 
          Console.WriteLine("Массив из случайных положительных трехзначных чисел:");
-         int L = new Random().Next(1, 10);
+         int L = new Random().Next(10, 21);
          int[] array = new int[L];
          FillArray(array);
          PrintArray(array);
