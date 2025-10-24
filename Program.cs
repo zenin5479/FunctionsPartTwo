@@ -66,10 +66,17 @@ namespace FunctionsPartTwo
          int PrintArrayEven(int[] set)
          {
             int count = 0;
-            for (int i = 0; i < set.Length; i++)
+            int i = 0;
+            while (i < set.Length)
             {
-               if (set[i] % 2 == 0) count++;
+               if (set[i] % 2 == 0)
+               {
+                  count++;
+               }
+
+               i++;
             }
+           
             return count;
          }
 
