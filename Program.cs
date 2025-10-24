@@ -58,12 +58,12 @@ namespace FunctionsPartTwo
          PrintArray(chance);
 
          // Метод подсчета кол четных значений в массиве
-         int PrintArrayEven(int[] array)
+         int PrintArrayEven(int[] set)
          {
             int count = 0;
-            for (int i = 0; i < array.Length; i++)
+            for (int i = 0; i < set.Length; i++)
             {
-               if (array[i] % 2 == 0) count++;
+               if (set[i] % 2 == 0) count++;
             }
             return count;
          }
