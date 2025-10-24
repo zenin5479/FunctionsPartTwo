@@ -42,17 +42,19 @@ namespace FunctionsPartTwo
                series[i] = rand.Next(100, 999);
             }
          }
+
          FillArray(chance);
 
          // Метод распечатки массива
-         void PrintArray(int[] array)
+         void PrintArray(int[] group)
          {
-            for (int i = 0; i < array.Length; i++)
+            for (int i = 0; i < group.Length; i++)
             {
-               Console.Write(array[i] + " ");
+               Console.Write(group[i] + " ");
             }
             Console.WriteLine();
          }
+
          PrintArray(chance);
 
          // Метод подсчета кол четных значений в массиве
