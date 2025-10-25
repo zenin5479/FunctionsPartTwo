@@ -104,6 +104,7 @@ namespace FunctionsPartTwo
                if (i % 2 != 0)
                {
                   amount += cluster[i];
+
                }
 
                i++;
