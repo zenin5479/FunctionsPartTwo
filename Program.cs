@@ -101,11 +101,13 @@ namespace FunctionsPartTwo
             int i = 0;
             while (i < cluster.Length)
             {
+               if (i % 2 != 0) sum += cluster[i];
                i++;
             }
+
             for ( )
             {
-               if (i % 2 != 0) sum += cluster[i];
+
             }
             return sum;
          }
