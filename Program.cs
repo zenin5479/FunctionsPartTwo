@@ -97,16 +97,15 @@ namespace FunctionsPartTwo
          // Метод вычисления суммы значений элементов массива расположенных по нечётным индексам
          int ArraySumOddIndexes(int[] cluster)
          {
-            int sum = 0;
+            int amount = 0;
             int i = 0;
             while (i < cluster.Length)
             {
-               if (i % 2 != 0) sum += cluster[i];
+               if (i % 2 != 0) amount += cluster[i];
                i++;
             }
-
            
-            return sum;
+            return amount;
          }
 
          int group = ArraySumOddIndexes(assortment);
