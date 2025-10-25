@@ -98,12 +98,12 @@ namespace FunctionsPartTwo
          int ArraySumOddIndexes(int[] cluster)
          {
             int sum = 0;
-
-            while ()
+            int i = 0;
+            while (i < cluster.Length)
             {
-               
+               i++;
             }
-            for (int i = 0; i < cluster.Length; i++)
+            for ( )
             {
                if (i % 2 != 0) sum += cluster[i];
             }
