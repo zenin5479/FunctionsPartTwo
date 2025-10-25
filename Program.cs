@@ -105,10 +105,7 @@ namespace FunctionsPartTwo
                i++;
             }
 
-            for ( )
-            {
-
-            }
+           
             return sum;
          }
 
