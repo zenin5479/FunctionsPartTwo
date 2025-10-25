@@ -101,7 +101,11 @@ namespace FunctionsPartTwo
             int i = 0;
             while (i < cluster.Length)
             {
-               if (i % 2 != 0) amount += cluster[i];
+               if (i % 2 != 0)
+               {
+                  amount += cluster[i];
+               }
+
                i++;
             }
            
