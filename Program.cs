@@ -119,7 +119,7 @@ namespace FunctionsPartTwo
          Console.WriteLine("Нахождение разницы между максимальным и минимальным значением элементов массива вещественных чисел");
          Console.WriteLine("--------------------------------------------------------------------------------------------------");
 
-         Console.WriteLine("Массив из случайных вещественных чисел:");
+         Console.WriteLine("Массив случайных вещественных чисел:");
          int m = new Random().Next(1, 20);
          double[] array1 = new double[m];
          FillArrayD(array1);
