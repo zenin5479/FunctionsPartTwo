@@ -180,9 +180,9 @@ namespace FunctionsPartTwo
 
          DifferenceExtremesArray(stochastic);
 
-         Console.WriteLine("-----------------------------------------------------------");
+         Console.WriteLine("---------------------------------------------");
          Console.WriteLine("Произведение разрядов первого и второго числа");
-         Console.WriteLine("---------------------------------------------------------------------------- ");
+         Console.WriteLine("---------------------------------------------");
          // Задание чисел
          Random rnd = new Random();
          int L1 = rnd.Next(-1000, 1000);
