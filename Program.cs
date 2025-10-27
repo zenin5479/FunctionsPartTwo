@@ -88,8 +88,8 @@ namespace FunctionsPartTwo
          Console.WriteLine("----------------------------------------------------------------------------------");
 
          Console.WriteLine("Массив случайных положительных чисел:");
-         int b = new Random().Next(10, 21);
-         int[] assortment = new int[b];
+         int Stochastic = new Random().Next(10, 21);
+         int[] assortment = new int[Stochastic];
          FillArray(assortment);
 
          PrintArray(assortment);
