@@ -188,10 +188,15 @@ namespace FunctionsPartTwo
          Random probabilistic = new Random();
          void FillArrayy(int[] array)
          {
-            for (int i = 0; i < array.Length; i++)
+            int i = 0;
+            while (i < array.Length)
             {
                array[i] = probabilistic.Next(0, 10);
+               
+               i++ ; 
             }
+            
+           
          }
 
          FillArrayy(series);
