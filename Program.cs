@@ -200,7 +200,7 @@ namespace FunctionsPartTwo
          RealizationArray(series);
 
          // Метод распечатки массива
-         void PrintingArrayy(int[] compilation)
+         void PrintingArray(int[] compilation)
          {
             for (int i = 0; i < compilation.Length; i++)
             {
@@ -209,7 +209,7 @@ namespace FunctionsPartTwo
             Console.WriteLine();
          }
 
-         PrintingArrayy(series);
+         PrintingArray(series);
 
          Random desultory = new Random();
          int numberH = desultory.Next(100, 1000);
