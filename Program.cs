@@ -180,7 +180,7 @@ namespace FunctionsPartTwo
 
          DifferenceExtremesArray(stochastic);
 
- Console.WriteLine("---------------------------------------------------------------");
+         Console.WriteLine("---------------------------------------------------------------");
          Console.WriteLine("Определение наличия в массиве чисел заданной последовательности");
          Console.WriteLine("---------------------------------------------------------------");
          Random desultory = new Random();
@@ -321,7 +321,7 @@ namespace FunctionsPartTwo
             }
          }
 
-        
+
       }
    }
 }
