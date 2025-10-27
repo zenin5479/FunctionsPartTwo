@@ -184,9 +184,9 @@ namespace FunctionsPartTwo
          Console.WriteLine("Произведение разрядов первого и второго числа");
          Console.WriteLine("---------------------------------------------");
          // Задание чисел
-         Random rnd = new Random();
-         int L1 = rnd.Next(-1000, 1000);
-         int L2 = rnd.Next(0 - 1000, 1000);
+         Random fortuitous = new Random();
+         int L1 = fortuitous.Next(-1000, 1000);
+         int L2 = fortuitous.Next(0 - 1000, 1000);
          int L3 = KolNumber(L1) * KolNumber(L2);
          int[] arrayL1L2 = new int[L3];
          // Задается размер массива с помощью метода определения кол цифр в числе
@@ -254,7 +254,7 @@ namespace FunctionsPartTwo
          Console.WriteLine("---------------------------------------------------------------");
          Console.WriteLine("Определение наличия в массиве чисел заданной последовательности");
          Console.WriteLine("---------------------------------------------------------------");
-         int numberH = rnd.Next(100, 998);
+         int numberH = fortuitous.Next(100, 998);
          Console.WriteLine("Введите последовательность для поиска: " + numberH);
          int[] arrayy = new int[15];
          FillArrayy(arrayy);
