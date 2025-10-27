@@ -247,7 +247,7 @@ namespace FunctionsPartTwo
             }
             if (f != 1)
             {
-               Console.WriteLine("Последовательность " + number + " НЕТ в массиве");
+               Console.WriteLine("Последовательности " + number + " НЕТ в массиве");
             }
             else
             {
