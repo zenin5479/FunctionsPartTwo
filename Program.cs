@@ -209,13 +209,13 @@ namespace FunctionsPartTwo
                i++;
             }
 
-           
             Console.WriteLine();
          }
 
          PrintingArray(series);
 
-         Random desultory = new Random();
+         
+         Random desultory = new Random(); // заменить на ручной ввод последовательности
          int numberH = desultory.Next(100, 1000);
          Console.WriteLine("Введите последовательность для поиска: " + numberH);
 
