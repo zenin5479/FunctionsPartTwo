@@ -186,12 +186,12 @@ namespace FunctionsPartTwo
          // Метод заполнения массива случайными трехзначными положительными числами
          int[] series = new int[15];
          Random probabilistic = new Random();
-         void FillArrayy(int[] array)
+         void FillArrayy(int[] range)
          {
             int i = 0;
-            while (i < array.Length)
+            while (i < range.Length)
             {
-               array[i] = probabilistic.Next(0, 10);
+               range[i] = probabilistic.Next(0, 10);
                i++ ; 
             }
          }
