@@ -121,12 +121,9 @@ namespace FunctionsPartTwo
          Console.WriteLine("Массив случайных вещественных чисел:");
          int c = new Random().Next(1, 20);
          double[] stochastic = new double[c];
-         FillArrayD(stochastic);
-         PrintArrayD(stochastic);
-         MaxMinusMinArray(stochastic);
 
          // Метод заполнения массива случайными вещественными числами
-         void FillArrayD(double[] array)
+         void FillArrayDouble(double[] array)
          {
             Random rand = new Random();
             for (int i = 0; i < array.Length; i++)
@@ -134,6 +131,12 @@ namespace FunctionsPartTwo
                array[i] = Math.Round(rand.NextDouble() + rand.Next(-1000000, 1000000), 3);
             }
          }
+
+         FillArrayDouble(stochastic);
+         PrintArrayD(stochastic);
+         MaxMinusMinArray(stochastic);
+
+
 
          // Метод распечатки массива
          void PrintArrayD(double[] array)
