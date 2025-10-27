@@ -255,7 +255,7 @@ namespace FunctionsPartTwo
          Console.WriteLine("Определение наличия в массиве чисел заданной последовательности");
          Console.WriteLine("---------------------------------------------------------------");
          int numberH = rnd.Next(100, 998);
-         Console.WriteLine("На ввод подается трехзначное число: " + numberH);
+         Console.WriteLine("Введите последовательность для поиска: " + numberH);
          int[] arrayy = new int[15];
          FillArrayy(arrayy);
          PrintArrayy(arrayy);
