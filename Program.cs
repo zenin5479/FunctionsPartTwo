@@ -184,7 +184,7 @@ namespace FunctionsPartTwo
          Console.WriteLine("Определение наличия в массиве чисел заданной последовательности");
          Console.WriteLine("---------------------------------------------------------------");
          // Метод заполнения массива случайными трехзначными положит числами
-         int[] arrayy = new int[15];
+         int[] series = new int[15];
          void FillArrayy(int[] array)
          {
             Random probabilistic = new Random();
@@ -194,7 +194,7 @@ namespace FunctionsPartTwo
             }
          }
 
-         FillArrayy(arrayy);
+         FillArrayy(series);
 
          // Метод распечатки массива
          void PrintArrayy(int[] array)
@@ -206,7 +206,7 @@ namespace FunctionsPartTwo
             Console.WriteLine();
          }
 
-         PrintArrayy(arrayy);
+         PrintArrayy(series);
 
          Random desultory = new Random();
          int numberH = desultory.Next(100, 1000);
@@ -248,7 +248,7 @@ namespace FunctionsPartTwo
             }
          }
 
-         Sequence(arrayy, numberH);
+         Sequence(series, numberH);
 
          Console.WriteLine("---------------------------------------------");
          Console.WriteLine("Произведение разрядов первого и второго числа");
