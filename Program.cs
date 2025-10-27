@@ -119,7 +119,7 @@ namespace FunctionsPartTwo
          Console.WriteLine("Нахождение разницы между максимальным и минимальным значением элементов массива");
          Console.WriteLine("-------------------------------------------------------------------------------");
          Console.WriteLine("Массив случайных вещественных чисел:");
-         int c = new Random().Next(1, 20);
+         int c = new Random().Next(10, 20);
          double[] stochastic = new double[c];
          // Метод заполнения массива случайными вещественными числами
          void FillArrayDouble(double[] array)
@@ -128,7 +128,7 @@ namespace FunctionsPartTwo
             int i = 0;
             while (i < array.Length)
             {
-               array[i] = Math.Round(arbitrary.NextDouble() + arbitrary.Next(-1000000, 1000000), 3);
+               array[i] = Math.Round(arbitrary.NextDouble() + arbitrary.Next(-999, 1000), 3);
                i++;
             }
          }
@@ -262,8 +262,8 @@ namespace FunctionsPartTwo
          Console.WriteLine("---------------------------------------------");
          // Задание чисел
          Random fortuitous = new Random();
-         int L1 = fortuitous.Next(-1000, 1000);
-         int L2 = fortuitous.Next(0 - 1000, 1000);
+         int L1 = fortuitous.Next(-999, 1000);
+         int L2 = fortuitous.Next(-999, 1000);
          // Метод определения кол цифр в числе
          int KolNumber(int L)
          {
