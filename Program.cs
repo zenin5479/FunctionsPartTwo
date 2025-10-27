@@ -209,10 +209,7 @@ namespace FunctionsPartTwo
                i++;
             }
 
-            for ()
-            {
-               
-            }
+           
             Console.WriteLine();
          }
 
