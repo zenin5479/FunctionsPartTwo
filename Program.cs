@@ -144,14 +144,7 @@ namespace FunctionsPartTwo
             Console.WriteLine();
          }
 
-
          PrintArrayDouble(stochastic);
-
-         MaxMinusMinArray(stochastic);
-
-
-
-
 
          // Метод нахождения разности максимального и минимального значений элементов массива
          void MaxMinusMinArray(double[] array)
@@ -175,6 +168,14 @@ namespace FunctionsPartTwo
             Console.WriteLine("array[" + j + "]  max = " + max + ";  array[" + k + "]  min = " + min);
             Console.WriteLine("max - min = " + (max - min)); Console.WriteLine("");
          }
+
+         MaxMinusMinArray(stochastic);
+
+
+
+
+
+
 
          Console.WriteLine("ДОПОЛНИТЕЛЬНЫЕ ЗАДАНИЯ");
          Console.WriteLine("ЗАДАЧА 2----------------------------------------------------------------------------------------------------------------------- ");
