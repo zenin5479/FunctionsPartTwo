@@ -133,10 +133,7 @@ namespace FunctionsPartTwo
                i++;
             }
 
-            for (  )
-            {
-
-            }
+            
          }
 
          FillArrayDouble(stochastic);
