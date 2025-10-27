@@ -184,7 +184,6 @@ namespace FunctionsPartTwo
          Console.WriteLine("Определение наличия в массиве чисел заданной последовательности");
          Console.WriteLine("---------------------------------------------------------------");
          Random desultory = new Random();
-
          int numberH = desultory.Next(100, 998);
          Console.WriteLine("Введите последовательность для поиска: " + numberH);
          int[] arrayy = new int[15];
