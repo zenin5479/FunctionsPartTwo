@@ -283,7 +283,7 @@ namespace FunctionsPartTwo
          PrintArrayy(arrayy);
 
          // Метод определения есть в массиве последовательность из трех элементов
-         static void Sequence(int[] array, int number)
+         void Sequence(int[] array, int number)
          {
             int num = number / 10;
             int a3 = number - num * 10;
@@ -318,10 +318,7 @@ namespace FunctionsPartTwo
             }
          }
 
-         Sequence();
+         Sequence(arrayy, numberH);
       }
-
-
-
    }
 }
