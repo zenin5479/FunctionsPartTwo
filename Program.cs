@@ -320,10 +320,6 @@ namespace FunctionsPartTwo
          ArrayL1L2(arrayL1, arrayL2, arrayL1L2);
          Console.WriteLine("Массив с перемноженными элементами");
          PrintArrayN(arrayL1L2);
-
-
-
-
       }
    }
 }
