@@ -133,13 +133,9 @@ namespace FunctionsPartTwo
          }
 
          FillArrayDouble(stochastic);
-         PrintArrayD(stochastic);
-         MaxMinusMinArray(stochastic);
-
-
 
          // Метод распечатки массива
-         void PrintArrayD(double[] array)
+         void PrintArrayDouble(double[] array)
          {
             for (int i = 0; i < array.Length; i++)
             {
@@ -147,6 +143,15 @@ namespace FunctionsPartTwo
             }
             Console.WriteLine();
          }
+
+
+         PrintArrayDouble(stochastic);
+
+         MaxMinusMinArray(stochastic);
+
+
+
+
 
          // Метод нахождения разности максимального и минимального значений элементов массива
          void MaxMinusMinArray(double[] array)
