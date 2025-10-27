@@ -155,9 +155,9 @@ namespace FunctionsPartTwo
          {
             double max = array[0];
             double min = array[0];
+            int i = 0;
             int j = 0;
             int k = 0;
-            int i = 0;
             while (i < array.Length)
             {
                if (array[i] > max)
