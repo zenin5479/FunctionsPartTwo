@@ -125,12 +125,17 @@ namespace FunctionsPartTwo
          void FillArrayDouble(double[] array)
          {
             Random arbitrary = new Random();
-            
-            
-            
-            for (int i = 0; i < array.Length; i++)
+
+            int i = 0;
+            while (i < array.Length)
             {
                array[i] = Math.Round(arbitrary.NextDouble() + arbitrary.Next(-1000000, 1000000), 3);
+               i++;
+            }
+
+            for (  )
+            {
+
             }
          }
 
