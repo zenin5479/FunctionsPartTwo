@@ -293,7 +293,6 @@ namespace FunctionsPartTwo
          }
 
          Sequence(arrayy, numberH);
-
          // Метод заполнения массива случайными трехзначными положит числами
          void FillArrayy(int[] array)
          {
