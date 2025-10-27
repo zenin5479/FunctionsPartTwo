@@ -253,28 +253,6 @@ namespace FunctionsPartTwo
          int[] arrayy = new int[15];
          FillArrayy(arrayy);
          PrintArrayy(arrayy);
-         // Поиск последовательности
-         Sequence(arrayy, numberH);
-
-         // Метод заполнения массива случайными трехзначными положит числами
-         void FillArrayy(int[] array)
-         {
-            Random rand = new Random();
-            for (int i = 0; i < array.Length; i++)
-            {
-               array[i] = rand.Next(0, 9);
-            }
-         }
-
-         // Метод распечатки массива
-         void PrintArrayy(int[] array)
-         {
-            for (int i = 0; i < array.Length; i++)
-            {
-               Console.Write(array[i] + " ");
-            }
-            Console.WriteLine();
-         }
 
          // Метод определения есть в массиве последовательность из трех элементов
          void Sequence(int[] array, int number)
@@ -304,6 +282,28 @@ namespace FunctionsPartTwo
             }
             if (f != 1) Console.WriteLine("Последовательность " + number + " НЕТ в массиве");
             else Console.WriteLine("Последовательность " + number + " ЕСТЬ в массиве");
+         }
+
+         Sequence(arrayy, numberH);
+
+         // Метод заполнения массива случайными трехзначными положит числами
+         void FillArrayy(int[] array)
+         {
+            Random rand = new Random();
+            for (int i = 0; i < array.Length; i++)
+            {
+               array[i] = rand.Next(0, 9);
+            }
+         }
+
+         // Метод распечатки массива
+         void PrintArrayy(int[] array)
+         {
+            for (int i = 0; i < array.Length; i++)
+            {
+               Console.Write(array[i] + " ");
+            }
+            Console.WriteLine();
          }
       }
    }
