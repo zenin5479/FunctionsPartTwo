@@ -34,7 +34,7 @@ namespace FunctionsPartTwo
          int a = new Random().Next(10, 21);
          int[] chance = new int[a];
          // Метод заполнения массива случайными трехзначными положительными числами
-         void FillArray(int[] series)
+         void FillArrayInt(int[] series)
          {
             Random rand = new Random();
             int i = 0;
@@ -45,10 +45,10 @@ namespace FunctionsPartTwo
             }
          }
 
-         FillArray(chance);
+         FillArrayInt(chance);
 
          // Метод распечатки массива
-         void PrintArray(int[] group)
+         void PrintArrayInt(int[] group)
          {
             int i = 0;
             while (i < group.Length)
@@ -60,10 +60,10 @@ namespace FunctionsPartTwo
             Console.WriteLine();
          }
 
-         PrintArray(chance);
+         PrintArrayInt(chance);
 
          // Метод подсчета кол четных значений в массиве
-         int PrintArrayEven(int[] set)
+         int PrintArrayEvenInt(int[] set)
          {
             int count = 0;
             int i = 0;
@@ -80,7 +80,7 @@ namespace FunctionsPartTwo
             return count;
          }
 
-         int itemize = PrintArrayEven(chance);
+         int itemize = PrintArrayEvenInt(chance);
          Console.WriteLine("Количество четных чисел в массиве = {0}", itemize);
 
          Console.WriteLine("----------------------------------------------------------------------------------");
@@ -90,9 +90,9 @@ namespace FunctionsPartTwo
          Console.WriteLine("Массив случайных положительных чисел:");
          int b = new Random().Next(10, 21);
          int[] assortment = new int[b];
-         FillArray(assortment);
+         FillArrayInt(assortment);
 
-         PrintArray(assortment);
+         PrintArrayInt(assortment);
 
          // Метод вычисления суммы значений элементов массива расположенных по нечётным индексам
          int ArraySumOddIndexes(int[] cluster)
