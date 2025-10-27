@@ -214,8 +214,8 @@ namespace FunctionsPartTwo
 
          PrintingArray(series);
 
-         
-         Random desultory = new Random(); // заменить на ручной ввод последовательности
+         // Заменить на ручной ввод последовательности
+         Random desultory = new Random(); 
          int numberH = desultory.Next(100, 1000);
          Console.WriteLine("Введите последовательность для поиска: " + numberH);
 
