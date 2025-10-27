@@ -119,12 +119,11 @@ namespace FunctionsPartTwo
          Console.WriteLine("Нахождение разницы между максимальным и минимальным значением элементов массива");
          Console.WriteLine("-------------------------------------------------------------------------------");
          Console.WriteLine("Массив случайных вещественных чисел:");
-         int m = new Random().Next(1, 20);
-         double[] array1 = new double[m];
-         FillArrayD(array1);
-         PrintArrayD(array1);
-         Console.WriteLine("");
-         MaxMinusMinArray(array1);
+         int c = new Random().Next(1, 20);
+         double[] stochastic = new double[c];
+         FillArrayD(stochastic);
+         PrintArrayD(stochastic);
+         MaxMinusMinArray(stochastic);
 
          // Метод заполнения массива случайными вещественными числами
          void FillArrayD(double[] array)
