@@ -251,14 +251,14 @@ namespace FunctionsPartTwo
             }
          }
 
-         
+
          Console.WriteLine("---------------------------------------------------------------");
          Console.WriteLine("Определение наличия в массиве чисел заданной последовательности");
          Console.WriteLine("---------------------------------------------------------------");
          int numberH = fortuitous.Next(100, 998);
          Console.WriteLine("Введите последовательность для поиска: " + numberH);
          int[] arrayy = new int[15];
-         
+
          // Метод заполнения массива случайными трехзначными положит числами
          void FillArrayy(int[] array)
          {
@@ -269,6 +269,7 @@ namespace FunctionsPartTwo
             }
          }
 
+         FillArrayy(arrayy);
 
          // Метод распечатки массива
          void PrintArrayy(int[] array)
@@ -280,11 +281,9 @@ namespace FunctionsPartTwo
             Console.WriteLine();
          }
 
-
-
-         
-         FillArrayy(arrayy);
          PrintArrayy(arrayy);
+
+
       }
 
       // Метод определения есть в массиве последовательность из трех элементов
