@@ -156,7 +156,9 @@ namespace FunctionsPartTwo
             double max = array[0];
             double min = array[0];
             int j = 0; int k = 0;
-            for (int i = 0; i < array.Length; i++)
+
+            int i = 0;
+            while (i < array.Length)
             {
                if (array[i] > max)
                {
@@ -168,6 +170,13 @@ namespace FunctionsPartTwo
                   min = array[i];
                   k = i;
                }
+
+               i++;
+            }
+
+            for (  )
+            {
+
             }
             Console.WriteLine("array[" + j + "]  max = " + max + ";  array[" + k + "]  min = " + min);
             Console.WriteLine("max - min = " + (max - min)); Console.WriteLine("");
