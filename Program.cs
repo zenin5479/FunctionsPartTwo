@@ -183,14 +183,14 @@ namespace FunctionsPartTwo
          Console.WriteLine("---------------------------------------------------------------");
          Console.WriteLine("Определение наличия в массиве чисел заданной последовательности");
          Console.WriteLine("---------------------------------------------------------------");
-         // Метод заполнения массива случайными трехзначными положит числами
+         // Метод заполнения массива случайными трехзначными положительными числами
          int[] series = new int[15];
+         Random probabilistic = new Random();
          void FillArrayy(int[] array)
          {
-            Random probabilistic = new Random();
             for (int i = 0; i < array.Length; i++)
             {
-               array[i] = probabilistic.Next(0, 9);
+               array[i] = probabilistic.Next(0, 10);
             }
          }
 
