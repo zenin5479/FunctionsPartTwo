@@ -141,7 +141,7 @@ namespace FunctionsPartTwo
             int i = 0;
             while (i < array.Length)
             {
-               Console.WriteLine(array[i] + " | ");
+               Console.WriteLine(array[i]);
                i++;
             }
 
