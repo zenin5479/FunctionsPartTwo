@@ -125,15 +125,12 @@ namespace FunctionsPartTwo
          void FillArrayDouble(double[] array)
          {
             Random arbitrary = new Random();
-
             int i = 0;
             while (i < array.Length)
             {
                array[i] = Math.Round(arbitrary.NextDouble() + arbitrary.Next(-1000000, 1000000), 3);
                i++;
             }
-
-            
          }
 
          FillArrayDouble(stochastic);
