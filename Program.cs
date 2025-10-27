@@ -192,11 +192,8 @@ namespace FunctionsPartTwo
             while (i < array.Length)
             {
                array[i] = probabilistic.Next(0, 10);
-               
                i++ ; 
             }
-            
-           
          }
 
          FillArrayy(series);
