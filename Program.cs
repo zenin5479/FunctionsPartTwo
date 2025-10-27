@@ -95,7 +95,7 @@ namespace FunctionsPartTwo
          PrintArrayInt(assortment);
 
          // Метод вычисления суммы значений элементов массива расположенных по нечётным индексам
-         int ArraySumOddIndexes(int[] cluster)
+         int ArraySumOddIndex(int[] cluster)
          {
             int amount = 0;
             int i = 0;
@@ -112,7 +112,7 @@ namespace FunctionsPartTwo
             return amount;
          }
 
-         int group = ArraySumOddIndexes(assortment);
+         int group = ArraySumOddIndex(assortment);
          Console.WriteLine("Сумма значений элементов одномерного массива расположенных по нечётным индексам = {0}", group);
 
          Console.WriteLine("-------------------------------------------------------------------------------");
