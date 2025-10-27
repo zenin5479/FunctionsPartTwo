@@ -180,6 +180,77 @@ namespace FunctionsPartTwo
 
          DifferenceExtremesArray(stochastic);
 
+ Console.WriteLine("---------------------------------------------------------------");
+         Console.WriteLine("Определение наличия в массиве чисел заданной последовательности");
+         Console.WriteLine("---------------------------------------------------------------");
+         Random desultory = new Random();
+
+         int numberH = desultory.Next(100, 998);
+         Console.WriteLine("Введите последовательность для поиска: " + numberH);
+         int[] arrayy = new int[15];
+
+         // Метод заполнения массива случайными трехзначными положит числами
+         void FillArrayy(int[] array)
+         {
+            Random probabilistic = new Random();
+            for (int i = 0; i < array.Length; i++)
+            {
+               array[i] = probabilistic.Next(0, 9);
+            }
+         }
+
+         FillArrayy(arrayy);
+
+         // Метод распечатки массива
+         void PrintArrayy(int[] array)
+         {
+            for (int i = 0; i < array.Length; i++)
+            {
+               Console.Write(array[i] + " ");
+            }
+            Console.WriteLine();
+         }
+
+         PrintArrayy(arrayy);
+
+         // Метод определения есть в массиве последовательность из трех элементов
+         void Sequence(int[] array, int number)
+         {
+            int num = number / 10;
+            int a3 = number - num * 10;
+            int a2 = num - num / 10 * 10;
+            int a1 = num / 10;
+            int i = 0;
+            int f = 0;
+            int L = array.Length;
+            while (i < L)
+            {
+               if (array[i] == a1 && (L - i) > 2)
+               {
+                  i++;
+                  if (array[i] == a2)
+                  {
+                     i++;
+                     if (array[i] == a3)
+                     {
+                        f = 1;
+                     }
+                  }
+               }
+               i++;
+            }
+            if (f != 1)
+            {
+               Console.WriteLine("Последовательность " + number + " НЕТ в массиве");
+            }
+            else
+            {
+               Console.WriteLine("Последовательность " + number + " ЕСТЬ в массиве");
+            }
+         }
+
+         Sequence(arrayy, numberH);
+
          Console.WriteLine("---------------------------------------------");
          Console.WriteLine("Произведение разрядов первого и второго числа");
          Console.WriteLine("---------------------------------------------");
@@ -251,74 +322,7 @@ namespace FunctionsPartTwo
             }
          }
 
-         Console.WriteLine("---------------------------------------------------------------");
-         Console.WriteLine("Определение наличия в массиве чисел заданной последовательности");
-         Console.WriteLine("---------------------------------------------------------------");
-         int numberH = fortuitous.Next(100, 998);
-         Console.WriteLine("Введите последовательность для поиска: " + numberH);
-         int[] arrayy = new int[15];
-
-         // Метод заполнения массива случайными трехзначными положит числами
-         void FillArrayy(int[] array)
-         {
-            Random probabilistic = new Random();
-            for (int i = 0; i < array.Length; i++)
-            {
-               array[i] = probabilistic.Next(0, 9);
-            }
-         }
-
-         FillArrayy(arrayy);
-
-         // Метод распечатки массива
-         void PrintArrayy(int[] array)
-         {
-            for (int i = 0; i < array.Length; i++)
-            {
-               Console.Write(array[i] + " ");
-            }
-            Console.WriteLine();
-         }
-
-         PrintArrayy(arrayy);
-
-         // Метод определения есть в массиве последовательность из трех элементов
-         void Sequence(int[] array, int number)
-         {
-            int num = number / 10;
-            int a3 = number - num * 10;
-            int a2 = num - num / 10 * 10;
-            int a1 = num / 10;
-            int i = 0;
-            int f = 0;
-            int L = array.Length;
-            while (i < L)
-            {
-               if (array[i] == a1 && (L - i) > 2)
-               {
-                  i++;
-                  if (array[i] == a2)
-                  {
-                     i++;
-                     if (array[i] == a3)
-                     {
-                        f = 1;
-                     }
-                  }
-               }
-               i++;
-            }
-            if (f != 1)
-            {
-               Console.WriteLine("Последовательность " + number + " НЕТ в массиве");
-            }
-            else
-            {
-               Console.WriteLine("Последовательность " + number + " ЕСТЬ в массиве");
-            }
-         }
-
-         Sequence(arrayy, numberH);
+        
       }
    }
 }
