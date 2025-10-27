@@ -36,11 +36,11 @@ namespace FunctionsPartTwo
          // Метод заполнения массива случайными трехзначными положительными числами
          void FillArrayInt(int[] series)
          {
-            Random rand = new Random();
+            Random aimless = new Random();
             int i = 0;
             while (i < series.Length)
             {
-               series[i] = rand.Next(100, 1000);
+               series[i] = aimless.Next(100, 1000);
                i++;
             }
          }
@@ -185,37 +185,38 @@ namespace FunctionsPartTwo
          Console.WriteLine("---------------------------------------------------------------");
          // Метод заполнения массива случайными трехзначными положительными числами
          int[] series = new int[15];
-         Random probabilistic = new Random();
-         void FillArrayy(int[] range)
+
+         void RealizationArray(int[] range)
          {
+            Random probabilistic = new Random();
             int i = 0;
             while (i < range.Length)
             {
                range[i] = probabilistic.Next(0, 10);
-               i++ ; 
+               i++;
             }
          }
 
-         FillArrayy(series);
+         RealizationArray(series);
 
          // Метод распечатки массива
-         void PrintArrayy(int[] array)
+         void PrintingArrayy(int[] compilation)
          {
-            for (int i = 0; i < array.Length; i++)
+            for (int i = 0; i < compilation.Length; i++)
             {
-               Console.Write(array[i] + " ");
+               Console.Write(compilation[i] + " ");
             }
             Console.WriteLine();
          }
 
-         PrintArrayy(series);
+         PrintingArrayy(series);
 
          Random desultory = new Random();
          int numberH = desultory.Next(100, 1000);
          Console.WriteLine("Введите последовательность для поиска: " + numberH);
 
          // Метод определения есть в массиве последовательность из трех элементов
-         void Sequence(int[] array, int number)
+         void Sequence(int[] selection, int number)
          {
             int num = number / 10;
             int a3 = number - num * 10;
@@ -223,16 +224,16 @@ namespace FunctionsPartTwo
             int a1 = num / 10;
             int i = 0;
             int f = 0;
-            int L = array.Length;
+            int L = selection.Length;
             while (i < L)
             {
-               if (array[i] == a1 && (L - i) > 2)
+               if (selection[i] == a1 && (L - i) > 2)
                {
                   i++;
-                  if (array[i] == a2)
+                  if (selection[i] == a2)
                   {
                      i++;
-                     if (array[i] == a3)
+                     if (selection[i] == a3)
                      {
                         f = 1;
                      }
