@@ -251,7 +251,6 @@ namespace FunctionsPartTwo
             }
          }
 
-
          Console.WriteLine("---------------------------------------------------------------");
          Console.WriteLine("Определение наличия в массиве чисел заданной последовательности");
          Console.WriteLine("---------------------------------------------------------------");
@@ -283,43 +282,45 @@ namespace FunctionsPartTwo
 
          PrintArrayy(arrayy);
 
+         static void Sequence(int[] array, int number)
+         {
+            int num = number / 10;
+            int a3 = number - num * 10;
+            int a2 = num - num / 10 * 10;
+            int a1 = num / 10;
+            int i = 0;
+            int f = 0;
+            int L = array.Length;
+            while (i < L)
+            {
+               if (array[i] == a1 && (L - i) > 2)
+               {
+                  i++;
+                  if (array[i] == a2)
+                  {
+                     i++;
+                     if (array[i] == a3)
+                     {
+                        f = 1;
+                     }
+                  }
+               }
+               i++;
+            }
+            if (f != 1)
+            {
+               Console.WriteLine("Последовательность " + number + " НЕТ в массиве");
+            }
+            else
+            {
+               Console.WriteLine("Последовательность " + number + " ЕСТЬ в массиве");
+            }
+         }
 
+         Sequence();
       }
 
       // Метод определения есть в массиве последовательность из трех элементов
-      static void Sequence(int[] array, int number)
-      {
-         int num = number / 10;
-         int a3 = number - num * 10;
-         int a2 = num - num / 10 * 10;
-         int a1 = num / 10;
-         int i = 0;
-         int f = 0;
-         int L = array.Length;
-         while (i < L)
-         {
-            if (array[i] == a1 && (L - i) > 2)
-            {
-               i++;
-               if (array[i] == a2)
-               {
-                  i++;
-                  if (array[i] == a3)
-                  {
-                     f = 1;
-                  }
-               }
-            }
-            i++;
-         }
-         if (f != 1)
-         {
-            Console.WriteLine("Последовательность " + number + " НЕТ в массиве");
-         }
-         else
-         {
-            Console.WriteLine("Последовательность " + number + " ЕСТЬ в массиве");
-         }
-      }
+
    }
 }
