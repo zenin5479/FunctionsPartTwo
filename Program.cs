@@ -202,9 +202,16 @@ namespace FunctionsPartTwo
          // Метод распечатки массива
          void PrintingArray(int[] compilation)
          {
-            for (int i = 0; i < compilation.Length; i++)
+            int i = 0;
+            while (i < compilation.Length)
             {
                Console.Write(compilation[i] + " ");
+               i++;
+            }
+
+            for ()
+            {
+               
             }
             Console.WriteLine();
          }
