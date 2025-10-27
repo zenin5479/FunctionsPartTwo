@@ -183,12 +183,8 @@ namespace FunctionsPartTwo
          Console.WriteLine("---------------------------------------------------------------");
          Console.WriteLine("Определение наличия в массиве чисел заданной последовательности");
          Console.WriteLine("---------------------------------------------------------------");
-         Random desultory = new Random();
-         int numberH = desultory.Next(100, 1000);
-         Console.WriteLine("Введите последовательность для поиска: " + numberH);
-         int[] arrayy = new int[15];
-
          // Метод заполнения массива случайными трехзначными положит числами
+         int[] arrayy = new int[15];
          void FillArrayy(int[] array)
          {
             Random probabilistic = new Random();
@@ -211,6 +207,10 @@ namespace FunctionsPartTwo
          }
 
          PrintArrayy(arrayy);
+
+         Random desultory = new Random();
+         int numberH = desultory.Next(100, 1000);
+         Console.WriteLine("Введите последовательность для поиска: " + numberH);
 
          // Метод определения есть в массиве последовательность из трех элементов
          void Sequence(int[] array, int number)
@@ -257,42 +257,6 @@ namespace FunctionsPartTwo
          Random fortuitous = new Random();
          int L1 = fortuitous.Next(-1000, 1000);
          int L2 = fortuitous.Next(0 - 1000, 1000);
-         int L3 = KolNumber(L1) * KolNumber(L2);
-         int[] arrayL1L2 = new int[L3];
-         // Задается размер массива с помощью метода определения кол цифр в числе
-         int[] arrayL1 = new int[KolNumber(L1)];
-         int[] arrayL2 = new int[KolNumber(L2)];
-         // Заполнение массива цифрами из числа
-         FillArrayN(arrayL1, L1);
-         FillArrayN(arrayL2, L2);
-         // Распечатка массива, состоящий из цифр числа
-         PrintArrayN(arrayL1);
-         PrintArrayN(arrayL2);
-         // Задается массив с перемноженными элементами исходныъх двух массивов
-         ArrayL1L2(arrayL1, arrayL2, arrayL1L2);
-         Console.WriteLine("Массив с перемноженными элементами");
-         PrintArrayN(arrayL1L2);
-         // Метод заполнения массива цифрами из числа
-         void FillArrayN(int[] array, int L)
-         {
-            for (int i = array.Length - 1; i >= 0; i--)
-            {
-               array[i] = L - L / 10 * 10;
-               L = L / 10;
-
-            }
-         }
-
-         // Метод распечатки массива
-         void PrintArrayN(int[] array)
-         {
-            for (int i = 0; i < array.Length; i++)
-            {
-               Console.Write(array[i] + " ");
-            }
-            Console.WriteLine();
-         }
-
          // Метод определения кол цифр в числе
          int KolNumber(int L)
          {
@@ -306,6 +270,37 @@ namespace FunctionsPartTwo
             }
             return count;
          }
+         int L3 = KolNumber(L1) * KolNumber(L2);
+         int[] arrayL1L2 = new int[L3];
+         // Задается размер массива с помощью метода определения кол цифр в числе
+         int[] arrayL1 = new int[KolNumber(L1)];
+         int[] arrayL2 = new int[KolNumber(L2)];
+         // Метод заполнения массива цифрами из числа
+         void FillArrayN(int[] array, int L)
+         {
+            for (int i = array.Length - 1; i >= 0; i--)
+            {
+               array[i] = L - L / 10 * 10;
+               L = L / 10;
+
+            }
+         }
+
+         FillArrayN(arrayL1, L1);
+         FillArrayN(arrayL2, L2);
+
+         // Метод распечатки массива
+         void PrintArrayN(int[] array)
+         {
+            for (int i = 0; i < array.Length; i++)
+            {
+               Console.Write(array[i] + " ");
+            }
+            Console.WriteLine();
+         }
+         // Распечатка массива, состоящий из цифр числа
+         PrintArrayN(arrayL1);
+         PrintArrayN(arrayL2);
 
          // Метод перемножения элементов массива, состоящих из цифр числа
          void ArrayL1L2(int[] arrayL1, int[] arrayL2, int[] arrayL1L2)
@@ -320,6 +315,16 @@ namespace FunctionsPartTwo
                }
             }
          }
+         // Задается массив с перемноженными элементами исходныъх двух массивов
+
+         ArrayL1L2(arrayL1, arrayL2, arrayL1L2);
+         Console.WriteLine("Массив с перемноженными элементами");
+         PrintArrayN(arrayL1L2);
+
+
+
+
+
 
 
       }
