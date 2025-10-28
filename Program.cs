@@ -216,16 +216,16 @@ namespace FunctionsPartTwo
 
          // Заменить на ручной ввод последовательности //
          Random desultory = new Random();
-         int numberH = desultory.Next(100, 1000);
-         Console.WriteLine("Введите последовательность для поиска: " + numberH);
+         int numeral = desultory.Next(100, 1000);
+         Console.WriteLine("Введите последовательность для поиска: " + numeral);
 
          // Метод определения есть в массиве последовательность из трех элементов
          void Sequence(int[] selection, int edition)
          {
-            int num = edition / 10;
-            int a3 = edition - num * 10;
-            int a2 = num - num / 10 * 10;
-            int a1 = num / 10;
+            int crowd = edition / 10;
+            int a3 = edition - crowd * 10;
+            int a2 = crowd - crowd / 10 * 10;
+            int a1 = crowd / 10;
             int i = 0;
             int f = 0;
             int L = selection.Length;
@@ -255,7 +255,7 @@ namespace FunctionsPartTwo
             }
          }
 
-         Sequence(series, numberH);
+         Sequence(series, numeral);
 
          Console.WriteLine("---------------------------------------------");
          Console.WriteLine("Произведение разрядов первого и второго числа");
