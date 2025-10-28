@@ -231,7 +231,7 @@ namespace FunctionsPartTwo
             int k = selection.Length;
             while (i < k)
             {
-               if (selection[i] == digitone && (k - i) > 2)
+               if (selection[i] == digitone && k - i > 2)
                {
                   i++;
                   if (selection[i] == digittwo)
