@@ -81,7 +81,7 @@ namespace FunctionsPartTwo
          }
 
          int itemize = PrintArrayEvenInt(chance);
-         Console.WriteLine("Количество четных чисел в массиве = {0}", itemize);
+         Console.WriteLine("Количество четных чисел в массиве: {0}", itemize);
 
          Console.WriteLine("----------------------------------------------------------------------------------");
          Console.WriteLine("Нахождение суммы элементов одномерного массива, расположенных по нечётным индексам");
@@ -113,7 +113,7 @@ namespace FunctionsPartTwo
          }
 
          int group = ArraySumOddIndex(assortment);
-         Console.WriteLine("Сумма значений элементов одномерного массива расположенных по нечётным индексам = {0}", group);
+         Console.WriteLine("Сумма значений элементов одномерного массива расположенных по нечётным индексам: {0}", group);
 
          Console.WriteLine("-------------------------------------------------------------------------------");
          Console.WriteLine("Нахождение разницы между максимальным и минимальным значением элементов массива");
