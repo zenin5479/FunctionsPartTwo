@@ -224,17 +224,17 @@ namespace FunctionsPartTwo
          {
             int crowd = edition / 10;
             int a3 = edition - crowd * 10;
-            int a2 = crowd - crowd / 10 * 10;
-            int a1 = crowd / 10;
+            int digittwo = crowd - crowd / 10 * 10;
+            int digitone = crowd / 10;
             int i = 0;
             int f = 0;
             int L = selection.Length;
             while (i < L)
             {
-               if (selection[i] == a1 && (L - i) > 2)
+               if (selection[i] == digitone && (L - i) > 2)
                {
                   i++;
-                  if (selection[i] == a2)
+                  if (selection[i] == digittwo)
                   {
                      i++;
                      if (selection[i] == a3)
