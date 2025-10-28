@@ -340,7 +340,9 @@ namespace FunctionsPartTwo
          Console.WriteLine("Массив с перемноженными элементами");
          PublicationArray(setcomposition);
 
-
+         Console.WriteLine("------------------------------------------------------------");
+         Console.WriteLine("Массив цифр сумма которых в три раза меньше их произведений:");
+         Console.WriteLine("------------------------------------------------------------");
          int count = 0;
          for (int i = 1; i <= 1000000; i++)
          {
