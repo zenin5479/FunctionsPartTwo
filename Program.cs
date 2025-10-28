@@ -278,6 +278,7 @@ namespace FunctionsPartTwo
 
                indicator++;
             }
+
             return indicator;
          }
          int L3 = NumberDigits(issueone) * NumberDigits(issuetwo);
