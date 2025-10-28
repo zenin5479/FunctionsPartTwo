@@ -262,8 +262,8 @@ namespace FunctionsPartTwo
          Console.WriteLine("------------------------------------------------");
          // Задание чисел
          Random fortuitous = new Random();
-         int issueone = fortuitous.Next(-999, 1000);
-         int issuetwo = fortuitous.Next(-999, 1000);
+         int issueone = fortuitous.Next(10, 1000000);
+         int issuetwo = fortuitous.Next(10, 1000000);
          // Метод определения кол цифр в числе
          int NumberDigits(int tracker)
          {
