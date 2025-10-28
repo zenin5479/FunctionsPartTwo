@@ -223,35 +223,35 @@ namespace FunctionsPartTwo
          void Sequence(int[] selection, int edition)
          {
             int crowd = edition / 10;
-            int a3 = edition - crowd * 10;
+            int digitthree = edition - crowd * 10;
             int digittwo = crowd - crowd / 10 * 10;
             int digitone = crowd / 10;
             int i = 0;
-            int f = 0;
-            int L = selection.Length;
-            while (i < L)
+            int j = 0;
+            int k = selection.Length;
+            while (i < k)
             {
-               if (selection[i] == digitone && (L - i) > 2)
+               if (selection[i] == digitone && (k - i) > 2)
                {
                   i++;
                   if (selection[i] == digittwo)
                   {
                      i++;
-                     if (selection[i] == a3)
+                     if (selection[i] == digitthree)
                      {
-                        f = 1;
+                        j = 1;
                      }
                   }
                }
                i++;
             }
-            if (f != 1)
+            if (j != 1)
             {
-               Console.WriteLine("Последовательности " + edition + " НЕТ в массиве");
+               Console.WriteLine("Последовательность " + edition + " отсутствует в массиве");
             }
             else
             {
-               Console.WriteLine("Последовательность " + edition + " ЕСТЬ в массиве");
+               Console.WriteLine("Последовательность " + edition + " имеется в массиве");
             }
          }
 
