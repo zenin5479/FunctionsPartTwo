@@ -290,10 +290,12 @@ namespace FunctionsPartTwo
          // Метод заполнения массива цифрами из числа
          void FillArrayN(int[] array, int L)
          {
-            for (int i = array.Length - 1; i >= 0; i--)
+            int i = array.Length - 1;
+            while (i >= 0)
             {
                array[i] = L - L / 10 * 10;
                L /= 10;
+               i--;
             }
          }
 
