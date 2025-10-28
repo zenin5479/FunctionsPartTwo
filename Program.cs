@@ -259,8 +259,8 @@ namespace FunctionsPartTwo
 
          Sequence(series, numeral);
 
-         Console.WriteLine("---------------------------------------------");
-         Console.WriteLine("Поразрядное произведение  первого и второго числа");
+         Console.WriteLine("------------------------------------------------");
+         Console.WriteLine("Поразрядное произведение первого и второго числа");
          Console.WriteLine("---------------------------------------------");
          // Задание чисел
          Random fortuitous = new Random();
