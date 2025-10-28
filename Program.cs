@@ -314,6 +314,7 @@ namespace FunctionsPartTwo
 
             Console.WriteLine();
          }
+
          // Распечатка массива, состоящий из цифр числа
          PrintArrayN(setone);
          PrintArrayN(settwo);
@@ -322,13 +323,20 @@ namespace FunctionsPartTwo
          void ArrayL1L2(int[] arrayL1, int[] arrayL2, int[] arrayL1L2)
          {
             int k = 0;
-            for (int i = 0; i < arrayL1.Length; i++)
+
+            int i = 0;
+            while (i < arrayL1.Length)
             {
+
                for (int j = 0; j < arrayL2.Length; j++)
                {
                   arrayL1L2[k] = arrayL1[i] * arrayL2[j];
                   k++;
                }
+
+
+
+               i++;
             }
          }
          // Задается массив с перемноженными элементами исходныъх двух массивов
