@@ -320,16 +320,16 @@ namespace FunctionsPartTwo
          PublicationArray(settwo);
 
          // Метод перемножения элементов массива, состоящих из цифр числа
-         void ArrayL1L2(int[] arrayL1, int[] arrayL2, int[] arrayL1L2)
+         void MultiplicationArray(int[] massifone, int[] massiftwo, int[] calculationarray)
          {
             int k = 0;
             int i = 0;
-            while (i < arrayL1.Length)
+            while (i < massifone.Length)
             {
                int j = 0;
-               while (j < arrayL2.Length)
+               while (j < massiftwo.Length)
                {
-                  arrayL1L2[k] = arrayL1[i] * arrayL2[j];
+                  calculationarray[k] = massifone[i] * massiftwo[j];
                   k++;
                   j++;
                }
@@ -339,7 +339,7 @@ namespace FunctionsPartTwo
          }
 
          // Задается массив с перемноженными элементами исходных двух массивов
-         ArrayL1L2(setone, settwo, setcomposition);
+         MultiplicationArray(setone, settwo, setcomposition);
          Console.WriteLine("Массив с перемноженными элементами");
          PublicationArray(setcomposition);
       }
