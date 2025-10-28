@@ -288,22 +288,22 @@ namespace FunctionsPartTwo
          int[] setone = new int[NumberDigits(issueone)];
          int[] settwo = new int[NumberDigits(issuetwo)];
          // Метод заполнения массива цифрами из числа
-         void FillArrayN(int[] array, int L)
+         void LoadArray(int[] array, int register)
          {
             int i = array.Length - 1;
             while (i >= 0)
             {
-               array[i] = L - L / 10 * 10;
-               L /= 10;
+               array[i] = register - register / 10 * 10;
+               register /= 10;
                i--;
             }
          }
 
-         FillArrayN(setone, issueone);
-         FillArrayN(settwo, issuetwo);
+         LoadArray(setone, issueone);
+         LoadArray(settwo, issuetwo);
 
          // Метод распечатки массива
-         void PrintArrayN(int[] array)
+         void PublicationArray(int[] array)
          {
             int i = 0;
             while (i < array.Length)
@@ -316,8 +316,8 @@ namespace FunctionsPartTwo
          }
 
          // Распечатка массива, состоящий из цифр числа
-         PrintArrayN(setone);
-         PrintArrayN(settwo);
+         PublicationArray(setone);
+         PublicationArray(settwo);
 
          // Метод перемножения элементов массива, состоящих из цифр числа
          void ArrayL1L2(int[] arrayL1, int[] arrayL2, int[] arrayL1L2)
@@ -341,7 +341,7 @@ namespace FunctionsPartTwo
          // Задается массив с перемноженными элементами исходных двух массивов
          ArrayL1L2(setone, settwo, setcomposition);
          Console.WriteLine("Массив с перемноженными элементами");
-         PrintArrayN(setcomposition);
+         PublicationArray(setcomposition);
       }
    }
 }
