@@ -291,7 +291,7 @@ namespace FunctionsPartTwo
             for (int i = array.Length - 1; i >= 0; i--)
             {
                array[i] = L - L / 10 * 10;
-               L = L / 10;
+               L /= 10;
 
             }
          }
