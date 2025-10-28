@@ -174,8 +174,8 @@ namespace FunctionsPartTwo
                i++;
             }
 
+            Console.WriteLine("Элемент массива по индексу [" + j + "]  имеет максимальное значение = " + max);
             Console.WriteLine("Элемент массива по индексу [" + j + "]  имеет максимальное значение = " + max + ";  array[" + k + "]  min = " + min);
-
             Console.WriteLine("max - min = " + (max - min)); Console.WriteLine("");
          }
 
