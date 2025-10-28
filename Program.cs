@@ -274,7 +274,7 @@ namespace FunctionsPartTwo
             L = Math.Abs(L);
             while (L > 0)
             {
-               L = L / 10;
+               L /= 10;
 
                count++;
             }
