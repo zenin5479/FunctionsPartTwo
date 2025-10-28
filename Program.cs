@@ -261,7 +261,7 @@ namespace FunctionsPartTwo
 
          Console.WriteLine("------------------------------------------------");
          Console.WriteLine("Поразрядное произведение первого и второго числа");
-         Console.WriteLine("---------------------------------------------");
+         Console.WriteLine("------------------------------------------------");
          // Задание чисел
          Random fortuitous = new Random();
          int L1 = fortuitous.Next(-999, 1000);
