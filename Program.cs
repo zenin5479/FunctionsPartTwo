@@ -216,14 +216,14 @@ namespace FunctionsPartTwo
 
          // Заменить на ручной ввод последовательности //
          Random desultory = new Random();
-         int numeral= desultory.Next(100, 1000);
-         Console.WriteLine("Введите последовательность для поиска: " + numeral);
+         int numberH = desultory.Next(100, 1000);
+         Console.WriteLine("Введите последовательность для поиска: " + numberH);
 
          // Метод определения есть в массиве последовательность из трех элементов
-         void Sequence(int[] selection, int number)
+         void Sequence(int[] selection, int edition)
          {
-            int num = number / 10;
-            int a3 = number - num * 10;
+            int num = edition / 10;
+            int a3 = edition - num * 10;
             int a2 = num - num / 10 * 10;
             int a1 = num / 10;
             int i = 0;
@@ -247,15 +247,15 @@ namespace FunctionsPartTwo
             }
             if (f != 1)
             {
-               Console.WriteLine("Последовательности " + number + " НЕТ в массиве");
+               Console.WriteLine("Последовательности " + edition + " НЕТ в массиве");
             }
             else
             {
-               Console.WriteLine("Последовательность " + number + " ЕСТЬ в массиве");
+               Console.WriteLine("Последовательность " + edition + " ЕСТЬ в массиве");
             }
          }
 
-         Sequence(series, numeral);
+         Sequence(series, numberH);
 
          Console.WriteLine("---------------------------------------------");
          Console.WriteLine("Произведение разрядов первого и второго числа");
