@@ -327,14 +327,16 @@ namespace FunctionsPartTwo
             int i = 0;
             while (i < arrayL1.Length)
             {
-
-               for (int j = 0; j < arrayL2.Length; j++)
+               int j = 0;
+               while (j < arrayL2.Length)
                {
+
+
                   arrayL1L2[k] = arrayL1[i] * arrayL2[j];
                   k++;
+
+                  j++;
                }
-
-
 
                i++;
             }
