@@ -265,26 +265,26 @@ namespace FunctionsPartTwo
          Console.WriteLine("------------------------------------------------");
          // Задание чисел
          Random fortuitous = new Random();
-         int L1 = fortuitous.Next(-999, 1000);
-         int L2 = fortuitous.Next(-999, 1000);
+         int issueone = fortuitous.Next(-999, 1000);
+         int issuetwo = fortuitous.Next(-999, 1000);
          // Метод определения кол цифр в числе
-         int KolNumber(int L)
+         int NumberDigits(int tracker)
          {
-            int count = 0;
-            L = Math.Abs(L);
-            while (L > 0)
+            int indicator = 0;
+            tracker = Math.Abs(tracker);
+            while (tracker > 0)
             {
-               L /= 10;
+               tracker /= 10;
 
-               count++;
+               indicator++;
             }
-            return count;
+            return indicator;
          }
-         int L3 = KolNumber(L1) * KolNumber(L2);
+         int L3 = NumberDigits(issueone) * NumberDigits(issuetwo);
          int[] arrayL1L2 = new int[L3];
          // Задается размер массива с помощью метода определения кол цифр в числе
-         int[] arrayL1 = new int[KolNumber(L1)];
-         int[] arrayL2 = new int[KolNumber(L2)];
+         int[] arrayL1 = new int[NumberDigits(issueone)];
+         int[] arrayL2 = new int[NumberDigits(issuetwo)];
          // Метод заполнения массива цифрами из числа
          void FillArrayN(int[] array, int L)
          {
@@ -296,8 +296,8 @@ namespace FunctionsPartTwo
             }
          }
 
-         FillArrayN(arrayL1, L1);
-         FillArrayN(arrayL2, L2);
+         FillArrayN(arrayL1, issueone);
+         FillArrayN(arrayL2, issuetwo);
 
          // Метод распечатки массива
          void PrintArrayN(int[] array)
