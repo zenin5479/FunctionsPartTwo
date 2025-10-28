@@ -339,6 +339,38 @@ namespace FunctionsPartTwo
          MultiplicationArray(setone, settwo, setcomposition);
          Console.WriteLine("Массив с перемноженными элементами");
          PublicationArray(setcomposition);
+
+
+         int count = 0;
+         for (int i = 1; i <= 1000000; i++)
+         {
+            int number = i;
+            int sum = 0;
+            int product = 1;
+            bool hasZero = false;
+
+            while (number > 0)
+            {
+               int digit = number % 10;
+               sum += digit;
+               product *= digit;
+               number /= 10;
+
+               if (digit == 0)
+               {
+                  hasZero = true;
+                  break;
+               }
+            }
+
+            if (!hasZero && product == 3 * sum)
+            {
+               count++;
+               Console.Write(i + " ");
+            }
+         }
+
+         Console.WriteLine("Количество чисел: {0}", count);
       }
    }
 }
