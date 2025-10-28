@@ -294,7 +294,6 @@ namespace FunctionsPartTwo
             {
                array[i] = L - L / 10 * 10;
                L /= 10;
-
             }
          }
 
