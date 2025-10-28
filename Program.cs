@@ -216,8 +216,8 @@ namespace FunctionsPartTwo
 
          // Заменить на ручной ввод последовательности //
          Random desultory = new Random();
-         int numberH = desultory.Next(100, 1000);
-         Console.WriteLine("Введите последовательность для поиска: " + numberH);
+         int numeral= desultory.Next(100, 1000);
+         Console.WriteLine("Введите последовательность для поиска: " + numeral);
 
          // Метод определения есть в массиве последовательность из трех элементов
          void Sequence(int[] selection, int number)
@@ -255,7 +255,7 @@ namespace FunctionsPartTwo
             }
          }
 
-         Sequence(series, numberH);
+         Sequence(series, numeral);
 
          Console.WriteLine("---------------------------------------------");
          Console.WriteLine("Произведение разрядов первого и второго числа");
