@@ -323,26 +323,22 @@ namespace FunctionsPartTwo
          void ArrayL1L2(int[] arrayL1, int[] arrayL2, int[] arrayL1L2)
          {
             int k = 0;
-
             int i = 0;
             while (i < arrayL1.Length)
             {
                int j = 0;
                while (j < arrayL2.Length)
                {
-
-
                   arrayL1L2[k] = arrayL1[i] * arrayL2[j];
                   k++;
-
                   j++;
                }
 
                i++;
             }
          }
-         // Задается массив с перемноженными элементами исходныъх двух массивов
 
+         // Задается массив с перемноженными элементами исходных двух массивов
          ArrayL1L2(setone, settwo, setcomposition);
          Console.WriteLine("Массив с перемноженными элементами");
          PrintArrayN(setcomposition);
