@@ -305,10 +305,13 @@ namespace FunctionsPartTwo
          // Метод распечатки массива
          void PrintArrayN(int[] array)
          {
-            for (int i = 0; i < array.Length; i++)
+            int i = 0;
+            while (i < array.Length)
             {
                Console.Write(array[i] + " ");
+               i++;
             }
+
             Console.WriteLine();
          }
          // Распечатка массива, состоящий из цифр числа
