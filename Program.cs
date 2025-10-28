@@ -174,9 +174,9 @@ namespace FunctionsPartTwo
                i++;
             }
 
-            Console.WriteLine("Элемент массива по индексу [" + j + "] имеет максимальное значение:" + max);
-            Console.WriteLine("Элемент массива по индексу [" + k + "] имеет минимальное значение = " + min);
-            Console.WriteLine("Разница между максимальным и минимальным значением элементов массиваma = " + (max - min));
+            Console.WriteLine("Элемент массива по индексу [" + j + "] имеет максимальное значение: " + max);
+            Console.WriteLine("Элемент массива по индексу [" + k + "] имеет минимальное значение: " + min);
+            Console.WriteLine("Разница между максимальным и минимальным значением элементов массива: " + (max - min));
          }
 
          DifferenceExtremesArray(stochastic);
