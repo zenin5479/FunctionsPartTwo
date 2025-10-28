@@ -281,11 +281,12 @@ namespace FunctionsPartTwo
 
             return indicator;
          }
-         int L3 = NumberDigits(issueone) * NumberDigits(issuetwo);
-         int[] arrayL1L2 = new int[L3];
-         // Задается размер массива с помощью метода определения кол цифр в числе
-         int[] arrayL1 = new int[NumberDigits(issueone)];
-         int[] arrayL2 = new int[NumberDigits(issuetwo)];
+
+         int composition = NumberDigits(issueone) * NumberDigits(issuetwo);
+         int[] setcomposition = new int[composition];
+         // Задается размер массива с помощью метода определения количества цифр в числе
+         int[] setone = new int[NumberDigits(issueone)];
+         int[] settwo = new int[NumberDigits(issuetwo)];
          // Метод заполнения массива цифрами из числа
          void FillArrayN(int[] array, int L)
          {
@@ -297,8 +298,8 @@ namespace FunctionsPartTwo
             }
          }
 
-         FillArrayN(arrayL1, issueone);
-         FillArrayN(arrayL2, issuetwo);
+         FillArrayN(setone, issueone);
+         FillArrayN(settwo, issuetwo);
 
          // Метод распечатки массива
          void PrintArrayN(int[] array)
@@ -310,8 +311,8 @@ namespace FunctionsPartTwo
             Console.WriteLine();
          }
          // Распечатка массива, состоящий из цифр числа
-         PrintArrayN(arrayL1);
-         PrintArrayN(arrayL2);
+         PrintArrayN(setone);
+         PrintArrayN(settwo);
 
          // Метод перемножения элементов массива, состоящих из цифр числа
          void ArrayL1L2(int[] arrayL1, int[] arrayL2, int[] arrayL1L2)
@@ -328,9 +329,9 @@ namespace FunctionsPartTwo
          }
          // Задается массив с перемноженными элементами исходныъх двух массивов
 
-         ArrayL1L2(arrayL1, arrayL2, arrayL1L2);
+         ArrayL1L2(setone, settwo, setcomposition);
          Console.WriteLine("Массив с перемноженными элементами");
-         PrintArrayN(arrayL1L2);
+         PrintArrayN(setcomposition);
       }
    }
 }
