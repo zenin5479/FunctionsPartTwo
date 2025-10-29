@@ -386,11 +386,11 @@ namespace FunctionsPartTwo
          int[][] arrays = new int[5][];
 
          // Пример данных (можно заменить на свои)
-         arrays[0] = new[] { 1, 2, 3 };
-         arrays[1] = new[] { 4, 5 };
-         arrays[2] = new[] { 6 };
-         arrays[3] = new[] { 7, 8, 9, 10 };
-         arrays[4] = new[] { 11, 12 };
+         arrays[0] = new[] { 5, 7, 9 };
+         arrays[1] = new[] { 3, 8 };
+         arrays[2] = new[] { 2, 9, 18 };
+         arrays[3] = new[] { 1, 3, 7, 8 };
+         arrays[4] = new[] { 12, 17 };
 
          // Поиск массива с максимальной суммой элементов
          int maxSum = int.MinValue;
