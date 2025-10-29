@@ -409,11 +409,6 @@ namespace FunctionsPartTwo
             
             j++;
          }
-         
-         for ( )
-         {
-           
-         }
 
          // Вывод результата
          Console.WriteLine("Массив с наибольшей суммой элементов:");
