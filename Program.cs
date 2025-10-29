@@ -385,7 +385,7 @@ namespace FunctionsPartTwo
          // Инициализация массива массивов
          int[][] arrays = new int[5][];
 
-         // Пример данных (можно заменить на свои)
+         // Заполнение массивов
          arrays[0] = new[] { 5, 7, 9 };
          arrays[1] = new[] { 3, 8 };
          arrays[2] = new[] { 2, 9, 18 };
