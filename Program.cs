@@ -347,16 +347,16 @@ namespace FunctionsPartTwo
          int i = 1;
          while (i <= 1000000)
          {
-            int version = i;
+            int reference = i;
             int total = 0;
             int crowd = 1;
             bool ifzero = false;
-            while (version > 0)
+            while (reference > 0)
             {
-               int digit = version % 10;
+               int digit = reference % 10;
                total += digit;
                crowd *= digit;
-               version /= 10;
+               reference /= 10;
                if (digit == 0)
                {
                   ifzero = true;
