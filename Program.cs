@@ -351,14 +351,12 @@ namespace FunctionsPartTwo
             int sum = 0;
             int product = 1;
             bool hasZero = false;
-
             while (number > 0)
             {
                int digit = number % 10;
                sum += digit;
                product *= digit;
                number /= 10;
-
                if (digit == 0)
                {
                   hasZero = true;
