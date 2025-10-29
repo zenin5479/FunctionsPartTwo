@@ -349,13 +349,13 @@ namespace FunctionsPartTwo
          {
             int reference = i;
             int total = 0;
-            int crowd = 1;
+            int product = 1;
             bool ifzero = false;
             while (reference > 0)
             {
                int character = reference % 10;
                total += character;
-               crowd *= character;
+               product *= character;
                reference /= 10;
                if (character == 0)
                {
@@ -364,7 +364,7 @@ namespace FunctionsPartTwo
                }
             }
 
-            if (!ifzero && crowd == 3 * total)
+            if (!ifzero && product == 3 * total)
             {
                counter++;
                Console.Write(i + " ");
