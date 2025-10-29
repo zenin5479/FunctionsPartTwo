@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Linq;
 
 // Функции продолжение
 // Задача: Задайте массив заполненный случайными положительными трёхзначными числами
@@ -377,6 +378,39 @@ namespace FunctionsPartTwo
 
          Console.WriteLine();
          Console.WriteLine("Количество чисел: {0}", counter);
+
+         // - Задача: Дан массив массивов, состоящих из натуральных чисел, размер которого 5
+         // Для каждого элемента массива требуется найти сумму его элементов и вывести массив с наибольшей суммой
+         // Если таких массивов несколько, вывести массив с наименьшим индексом
+         // Инициализация массива массивов
+         int[][] arrays = new int[5][];
+
+         // Пример данных (можно заменить на свои)
+         arrays[0] = new int[] { 1, 2, 3 };
+         arrays[1] = new int[] { 4, 5 };
+         arrays[2] = new int[] { 6 };
+         arrays[3] = new int[] { 7, 8, 9, 10 };
+         arrays[4] = new int[] { 11, 12 };
+
+         // Поиск массива с максимальной суммой элементов
+         int maxSum = int.MinValue;
+         int[] resultArray = null;
+
+         for (int j = 0; j < arrays.Length; j++)
+         {
+            int currentSum = arrays[j].Sum();
+            if (currentSum > maxSum)
+            {
+               maxSum = currentSum;
+               resultArray = arrays[j];
+            }
+         }
+
+         // Вывод результата
+         Console.WriteLine("Массив с наибольшей суммой элементов:");
+         Console.WriteLine($"[{string.Join(", ", resultArray)}]");
+         Console.WriteLine($"Сумма элементов: {maxSum}");
+
       }
    }
 }
