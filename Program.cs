@@ -247,11 +247,11 @@ namespace FunctionsPartTwo
 
             if (j == 1)
             {
-               Console.WriteLine("Последовательность " + edition + " имеется в массиве");
+               Console.WriteLine("Последовательность " + edition + ": имеется в массиве");
             }
             else
             {
-               Console.WriteLine("Последовательность " + edition + " отсутствует в массиве");
+               Console.WriteLine("Последовательность " + edition + ": отсутствует в массиве");
             }
          }
 
