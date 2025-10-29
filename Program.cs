@@ -350,7 +350,7 @@ namespace FunctionsPartTwo
             int version = i;
             int quantity = 0;
             int crowd = 1;
-            bool hasZero = false;
+            bool ifzero = false;
             while (version > 0)
             {
                int digit = version % 10;
@@ -359,12 +359,12 @@ namespace FunctionsPartTwo
                version /= 10;
                if (digit == 0)
                {
-                  hasZero = true;
+                  ifzero = true;
                   break;
                }
             }
 
-            if (!hasZero && crowd == 3 * quantity)
+            if (!ifzero && crowd == 3 * quantity)
             {
                calculator++;
                Console.Write(i + " ");
