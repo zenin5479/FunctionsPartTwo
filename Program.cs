@@ -348,13 +348,13 @@ namespace FunctionsPartTwo
          while (i <= 1000000)
          {
             int number = i;
-            int Quantity = 0;
+            int quantity = 0;
             int product = 1;
             bool hasZero = false;
             while (number > 0)
             {
                int digit = number % 10;
-               Quantity += digit;
+               quantity += digit;
                product *= digit;
                number /= 10;
                if (digit == 0)
@@ -364,7 +364,7 @@ namespace FunctionsPartTwo
                }
             }
 
-            if (!hasZero && product == 3 * Quantity)
+            if (!hasZero && product == 3 * quantity)
             {
                calculator++;
                Console.Write(i + " ");
