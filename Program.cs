@@ -343,18 +343,18 @@ namespace FunctionsPartTwo
          Console.WriteLine("------------------------------------------------------------");
          Console.WriteLine("Массив цифр сумма которых в три раза меньше их произведений:");
          Console.WriteLine("------------------------------------------------------------");
-         int Calculator = 0;
+         int calculator = 0;
          int i = 1;
          while (i <= 1000000)
          {
             int number = i;
-            int sum = 0;
+            int Quantity = 0;
             int product = 1;
             bool hasZero = false;
             while (number > 0)
             {
                int digit = number % 10;
-               sum += digit;
+               Quantity += digit;
                product *= digit;
                number /= 10;
                if (digit == 0)
@@ -364,16 +364,16 @@ namespace FunctionsPartTwo
                }
             }
 
-            if (!hasZero && product == 3 * sum)
+            if (!hasZero && product == 3 * Quantity)
             {
-               Calculator++;
+               calculator++;
                Console.Write(i + " ");
             }
 
             i++;
          }
 
-         Console.WriteLine("Количество чисел: {0}", Calculator);
+         Console.WriteLine("Количество чисел: {0}", calculator);
       }
    }
 }
