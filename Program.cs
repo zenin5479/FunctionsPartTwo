@@ -394,7 +394,7 @@ namespace FunctionsPartTwo
          arrays[3] = new[] { 1, 3, 7, 8 };
          arrays[4] = new[] { 12, 17 };
          // Поиск массива с максимальной суммой элементов
-         int maxSum = int.MinValue;
+         int maxSum = 0;
          int[] resultArray = null;
          int j = 0;
          while (j < arrays.Length)
