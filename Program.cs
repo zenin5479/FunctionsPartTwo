@@ -396,17 +396,16 @@ namespace FunctionsPartTwo
          // Поиск массива с максимальной суммой элементов
          int maxSum = int.MinValue;
          int[] resultArray = null;
-
-         int j = 0; 
+         int j = 0;
          while (j < arrays.Length)
          {
-             int currentSum = arrays[j].Sum();
+            int currentSum = arrays[j].Sum();
             if (currentSum > maxSum)
             {
                maxSum = currentSum;
                resultArray = arrays[j];
             }
-            
+
             j++;
          }
 
