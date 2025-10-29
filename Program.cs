@@ -347,16 +347,16 @@ namespace FunctionsPartTwo
          int i = 1;
          while (i <= 1000000)
          {
-            int Numeral = i;
+            int version = i;
             int quantity = 0;
-            int product = 1;
+            int crowd = 1;
             bool hasZero = false;
-            while (Numeral > 0)
+            while (version > 0)
             {
-               int digit = Numeral % 10;
+               int digit = version % 10;
                quantity += digit;
-               product *= digit;
-               Numeral /= 10;
+               crowd *= digit;
+               version /= 10;
                if (digit == 0)
                {
                   hasZero = true;
@@ -364,7 +364,7 @@ namespace FunctionsPartTwo
                }
             }
 
-            if (!hasZero && product == 3 * quantity)
+            if (!hasZero && crowd == 3 * quantity)
             {
                calculator++;
                Console.Write(i + " ");
