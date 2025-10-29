@@ -313,6 +313,7 @@ namespace FunctionsPartTwo
          }
 
          // Распечатка массива, цифр числа
+         Console.WriteLine("Массив цифр первого числа:");
          PublicationArray(setone);
          PublicationArray(settwo);
 
