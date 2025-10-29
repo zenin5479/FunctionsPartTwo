@@ -312,7 +312,7 @@ namespace FunctionsPartTwo
             Console.WriteLine();
          }
 
-         // Распечатка массива, состоящий из цифр числа
+         // Распечатка массива, цифр числа
          PublicationArray(setone);
          PublicationArray(settwo);
 
