@@ -348,13 +348,13 @@ namespace FunctionsPartTwo
          while (i <= 1000000)
          {
             int version = i;
-            int quantity = 0;
+            int total = 0;
             int crowd = 1;
             bool ifzero = false;
             while (version > 0)
             {
                int digit = version % 10;
-               quantity += digit;
+               total += digit;
                crowd *= digit;
                version /= 10;
                if (digit == 0)
@@ -364,7 +364,7 @@ namespace FunctionsPartTwo
                }
             }
 
-            if (!ifzero && crowd == 3 * quantity)
+            if (!ifzero && crowd == 3 * total)
             {
                counter++;
                Console.Write(i + " ");
