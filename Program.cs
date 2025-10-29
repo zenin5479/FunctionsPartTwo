@@ -337,7 +337,7 @@ namespace FunctionsPartTwo
 
          // Задается массив с перемноженными элементами исходных двух массивов
          MultiplicationArray(setone, settwo, setcomposition);
-         Console.WriteLine("Массив с перемноженными элементами");
+         Console.WriteLine("Массив с перемноженными элементами:");
          PublicationArray(setcomposition);
 
          Console.WriteLine("------------------------------------------------------------");
