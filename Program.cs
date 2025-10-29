@@ -353,11 +353,11 @@ namespace FunctionsPartTwo
             bool ifzero = false;
             while (reference > 0)
             {
-               int digit = reference % 10;
-               total += digit;
-               crowd *= digit;
+               int character = reference % 10;
+               total += character;
+               crowd *= character;
                reference /= 10;
-               if (digit == 0)
+               if (character == 0)
                {
                   ifzero = true;
                   break;
