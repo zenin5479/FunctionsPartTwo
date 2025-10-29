@@ -315,6 +315,7 @@ namespace FunctionsPartTwo
          // Распечатка массива, цифр числа
          Console.WriteLine("Массив цифр первого числа:");
          PublicationArray(setone);
+         Console.WriteLine("Массив цифр второго числа:");
          PublicationArray(settwo);
 
          // Метод перемножения элементов массива, состоящих из цифр числа
