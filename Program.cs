@@ -347,16 +347,16 @@ namespace FunctionsPartTwo
          int i = 1;
          while (i <= 1000000)
          {
-            int number = i;
+            int Numeral = i;
             int quantity = 0;
             int product = 1;
             bool hasZero = false;
-            while (number > 0)
+            while (Numeral > 0)
             {
-               int digit = number % 10;
+               int digit = Numeral % 10;
                quantity += digit;
                product *= digit;
-               number /= 10;
+               Numeral /= 10;
                if (digit == 0)
                {
                   hasZero = true;
