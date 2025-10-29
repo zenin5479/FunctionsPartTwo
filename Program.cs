@@ -344,7 +344,8 @@ namespace FunctionsPartTwo
          Console.WriteLine("Массив цифр сумма которых в три раза меньше их произведений:");
          Console.WriteLine("------------------------------------------------------------");
          int count = 0;
-         for (int i = 1; i <= 1000000; i++)
+         int i = 1;
+         while (i <= 1000000)
          {
             int number = i;
             int sum = 0;
@@ -370,6 +371,8 @@ namespace FunctionsPartTwo
                count++;
                Console.Write(i + " ");
             }
+
+            i++;
          }
 
          Console.WriteLine("Количество чисел: {0}", count);
