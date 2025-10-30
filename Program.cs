@@ -394,16 +394,16 @@ namespace FunctionsPartTwo
          arrays[3] = new[] { 4, 6, 15 };
          arrays[4] = new[] { 3, 8, 12 };
          // Поиск массива с максимальной суммой элементов
-         int maxSum = 0;
+         int limitaggregate = 0;
          int[] resultArray = null;
          int j = 0;
          while (j < arrays.Length)
          {
             int currentSum = arrays[j].Sum();
             Console.WriteLine(currentSum);
-            if (currentSum > maxSum)
+            if (currentSum > limitaggregate)
             {
-               maxSum = currentSum;
+               limitaggregate = currentSum;
                resultArray = arrays[j];
             }
 
@@ -413,7 +413,7 @@ namespace FunctionsPartTwo
          // Вывод результата
          Console.WriteLine("Массив с наибольшей суммой элементов:");
          Console.WriteLine($"[{string.Join(", ", resultArray)}]");
-         Console.WriteLine($"Сумма элементов: {maxSum}");
+         Console.WriteLine($"Сумма элементов: {limitaggregate}");
 
       }
    }
