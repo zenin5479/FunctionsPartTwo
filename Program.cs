@@ -439,17 +439,19 @@ namespace FunctionsPartTwo
          int summa = 0;
          while (x < numbers.Length)
          {
+            Console.WriteLine("Массив массивов [{0}], количество элементов [{1}]", x, numbers[x].Length);
             int z = 0;
             while (z < numbers[x].Length)
             {
+               
                summa += numbers[x][z];
                Console.Write("{0} ", numbers[x][z]);
                z++;
             }
 
+            Console.WriteLine();
             Console.WriteLine("Сумма элементов: {0}", summa);
             summa = 0;
-            //Console.WriteLine();
             x++;
          }
 
