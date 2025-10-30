@@ -415,9 +415,12 @@ namespace FunctionsPartTwo
          Console.WriteLine($"[{string.Join(", ", stockcollection)}]");
          Console.WriteLine("Сумма элементов: {0}", limitaggregate);
 
-         // Вычисление суммы элементов массива
-         int[] numbers = { 1, 2, 3, 4, 5 };
 
+         int[][] rang = new int[5][];
+         // Вычисление суммы элементов массива
+         rang[0] = new[]{ 10, 14 }; ;
+         rang[1] = new[] { 8, 8, 9 };
+         rang[2] = new[] { 4, 5, 6, 7 }; ;
          int sum = 0;
          // Расчет суммы
          int l = 0;
