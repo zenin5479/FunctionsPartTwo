@@ -451,16 +451,6 @@ namespace FunctionsPartTwo
             }
 
             Console.WriteLine();
-            for ( )
-            {
-
-            }
-
-
-
-
-
-
             x++;
          }
 
