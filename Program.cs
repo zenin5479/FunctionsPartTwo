@@ -392,7 +392,7 @@ namespace FunctionsPartTwo
          arrays[1] = new[] { 4, 5, 6, 7 };
          arrays[2] = new[] { 10, 14 };
          arrays[3] = new[] { 1, 3, 6, 7, 8 };
-         arrays[4] = new[] { 1, 2, 3, 4, 6, 7 };
+         arrays[4] = new[] { 1, 2, 3, 4, 5, 8 };
          // Поиск массива с максимальной суммой элементов
          int limitaggregate = 0;
          int[] resultArray = null;
