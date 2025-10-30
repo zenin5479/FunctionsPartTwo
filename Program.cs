@@ -428,19 +428,5 @@ namespace FunctionsPartTwo
          }
          Console.WriteLine("Сумма элементов: {0}", sum);
       }
-
-      public static int CalculateSum(int[] array)
-      {
-         int sum = 0;
-         // Расчет суммы
-         int i = 0;
-         while (i < array.Length)
-         {
-            sum += array[i];
-            i++;
-         }
-
-         return sum;
-      }
    }
 }
