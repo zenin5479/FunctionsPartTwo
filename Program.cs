@@ -417,8 +417,15 @@ namespace FunctionsPartTwo
 
          // Вычисление суммы элементов массива
          int[] numbers = { 1, 2, 3, 4, 5 };
-         // Вызов метода вычисления суммы
-         int sum = CalculateSum(numbers);
+
+         int sum = 0;
+         // Расчет суммы
+         int l = 0;
+         while (l < numbers.Length)
+         {
+            sum += numbers[l];
+            l++;
+         }
          Console.WriteLine("Сумма элементов: {0}", sum);
       }
 
