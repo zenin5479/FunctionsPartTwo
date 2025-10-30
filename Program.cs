@@ -426,6 +426,13 @@ namespace FunctionsPartTwo
       {
          int sum = 0;
          // Ручной подсчет суммы через цикл
+         
+         
+         while ()
+         {
+            
+         }
+         
          for (int i = 0; i < array.Length; i++)
          {
             sum += array[i];
