@@ -416,20 +416,36 @@ namespace FunctionsPartTwo
          Console.WriteLine("Сумма элементов: {0}", limitaggregate);
 
 
-         int[][] rang = new int[5][];
+         int[][] rang = new int[3][];
          // Вычисление суммы элементов массива
-         rang[0] = new[]{ 10, 14 }; ;
+         rang[0] = new[] { 10, 14 };
          rang[1] = new[] { 8, 8, 9 };
-         rang[2] = new[] { 4, 5, 6, 7 }; ;
+         rang[2] = new[] { 4, 5, 6, 7 };
          int sum = 0;
          // Расчет суммы
          int l = 0;
-         while (l < numbers.Length)
+         while (l < rang.Length)
          {
-            sum += numbers[l];
+            sum += rang[l].Length;
             l++;
          }
          Console.WriteLine("Сумма элементов: {0}", sum);
+
+         int[][] numbers = new int[3][];
+         numbers[0] = new[] { 1, 2 };
+         numbers[1] = new[] { 1, 2, 3 };
+         numbers[2] = new[] { 1, 2, 3, 4, 5 };
+        // перебор с помощью цикла for
+         for (int x = 0; x < numbers.Length; x++)
+         {
+            for (int z = 0; z < numbers[x].Length; z++)
+            {
+               Console.Write($"{numbers[x][z]} \t");
+            }
+            Console.WriteLine();
+         }
+
+         Console.ReadKey();
       }
    }
 }
