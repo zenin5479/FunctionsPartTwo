@@ -436,12 +436,15 @@ namespace FunctionsPartTwo
          numbers[1] = new[] { 1, 2, 3 };
          numbers[2] = new[] { 1, 2, 3, 4 };
          int x = 0;
+         int summa = 0;
          while (x < numbers.Length)
          {
             int z = 0;
             while (z < numbers[x].Length)
             {
-               Console.Write("{0} ", numbers[x][z]);
+               summa += numbers[z].Length;
+               Console.WriteLine("Сумма элементов: {0}", summa);
+               //Console.Write("{0} ", numbers[x][z]);
                z++;
             }
 
