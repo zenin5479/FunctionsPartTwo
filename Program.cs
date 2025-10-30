@@ -415,21 +415,21 @@ namespace FunctionsPartTwo
          Console.WriteLine($"[{string.Join(", ", stockcollection)}]");
          Console.WriteLine("Сумма элементов: {0}", limitaggregate);
 
-
-         int[][] rang = new int[3][];
-         // Вычисление суммы элементов массива
-         rang[0] = new[] { 10, 14 };
-         rang[1] = new[] { 8, 8, 9 };
-         rang[2] = new[] { 4, 5, 6, 7 };
-         int sum = 0;
-         // Расчет суммы
-         int l = 0;
-         while (l < rang.Length)
-         {
-            sum += rang[l].Length;
-            l++;
-         }
-         Console.WriteLine("Сумма элементов: {0}", sum);
+         Console.WriteLine();
+         //int[][] rang = new int[3][];
+         //// Вычисление суммы элементов массива
+         //rang[0] = new[] { 10, 14 };
+         //rang[1] = new[] { 8, 8, 9 };
+         //rang[2] = new[] { 4, 5, 6, 7 };
+         //int sum = 0;
+         //// Расчет суммы
+         //int l = 0;
+         //while (l < rang.Length)
+         //{
+         //   sum += rang[l].Length;
+         //   l++;
+         //}
+         //Console.WriteLine("Сумма элементов: {0}", sum);
 
          int[][] numbers = new int[3][];
          numbers[0] = new[] { 1, 2 };
@@ -442,13 +442,14 @@ namespace FunctionsPartTwo
             int z = 0;
             while (z < numbers[x].Length)
             {
-               summa += numbers[z].Length;
-               Console.WriteLine("Сумма элементов: {0}", summa);
-               //Console.Write("{0} ", numbers[x][z]);
+               summa += numbers[x][z];
+               Console.Write("{0} ", numbers[x][z]);
                z++;
             }
 
-            Console.WriteLine();
+            Console.WriteLine("Сумма элементов: {0}", summa);
+            summa = 0;
+            //Console.WriteLine();
             x++;
          }
 
