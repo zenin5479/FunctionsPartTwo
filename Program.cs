@@ -420,7 +420,6 @@ namespace FunctionsPartTwo
          // Вызов метода вычисления суммы
          int sum = CalculateSum(numbers);
          Console.WriteLine("Сумма элементов: {0}", sum);
-         Console.WriteLine($"Сумма элементов массива: {sum}");
       }
 
       public static int CalculateSum(int[] array)
