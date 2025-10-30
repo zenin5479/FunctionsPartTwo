@@ -415,6 +415,8 @@ namespace FunctionsPartTwo
          Console.WriteLine($"[{string.Join(", ", stockcollection)}]");
          Console.WriteLine("Сумма элементов: {0}", limitaggregate);
 
+         
+         
          int[] numbers = { 1, 2, 3, 4, 5 };
 
          // Вызов метода вычисления суммы
