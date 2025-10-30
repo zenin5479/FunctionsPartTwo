@@ -435,15 +435,36 @@ namespace FunctionsPartTwo
          numbers[0] = new[] { 1, 2 };
          numbers[1] = new[] { 1, 2, 3 };
          numbers[2] = new[] { 1, 2, 3, 4, 5 };
-        // перебор с помощью цикла for
-         for (int x = 0; x < numbers.Length; x++)
+         // перебор с помощью цикла for
+
+
+         int x = 0;
+         while (x < numbers.Length)
          {
-            for (int z = 0; z < numbers[x].Length; z++)
+            int z = 0;
+            while (z < numbers[x].Length)
             {
                Console.Write($"{numbers[x][z]} \t");
+
+
+               z++;
             }
+
             Console.WriteLine();
+            for ( )
+            {
+
+            }
+
+
+
+
+
+
+            x++;
          }
+
+
 
          Console.ReadKey();
       }
