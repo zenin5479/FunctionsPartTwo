@@ -389,10 +389,10 @@ namespace FunctionsPartTwo
          int[][] arrays = new int[5][];
          // Заполнение массивов
          arrays[0] = new[] { 5, 7, 9 };
-         arrays[1] = new[] { 3, 8, 11, 15 };
+         arrays[1] = new[] { 3, 8, 11 };
          arrays[2] = new[] { 2, 9, 18 };
-         arrays[3] = new[] { 1, 3, 7, 8 };
-         arrays[4] = new[] { 12, 17 };
+         arrays[3] = new[] { 1, 3, 7 };
+         arrays[4] = new[] { 12, 17, 10 };
          // Поиск массива с максимальной суммой элементов
          int maxSum = 0;
          int[] resultArray = null;
