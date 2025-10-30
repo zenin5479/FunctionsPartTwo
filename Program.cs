@@ -416,36 +416,21 @@ namespace FunctionsPartTwo
          Console.WriteLine("Сумма элементов: {0}", limitaggregate);
 
          Console.WriteLine();
-         //int[][] rang = new int[3][];
-         //// Вычисление суммы элементов массива
-         //rang[0] = new[] { 10, 14 };
-         //rang[1] = new[] { 8, 8, 9 };
-         //rang[2] = new[] { 4, 5, 6, 7 };
-         //int sum = 0;
-         //// Расчет суммы
-         //int l = 0;
-         //while (l < rang.Length)
-         //{
-         //   sum += rang[l].Length;
-         //   l++;
-         //}
-         //Console.WriteLine("Сумма элементов: {0}", sum);
 
-         int[][] numbers = new int[3][];
-         numbers[0] = new[] { 1, 2 };
-         numbers[1] = new[] { 1, 2, 3 };
-         numbers[2] = new[] { 1, 2, 3, 4 };
+         int[][] rang = new int[3][];
+         rang[0] = new[] { 1, 2 };
+         rang[1] = new[] { 1, 2, 3 };
+         rang[2] = new[] { 1, 2, 3, 4 };
          int x = 0;
          int summa = 0;
-         while (x < numbers.Length)
+         while (x < rang.Length)
          {
-            Console.WriteLine("Массив массивов [{0}], количество элементов [{1}]", x, numbers[x].Length);
+            Console.WriteLine("Массив массивов [{0}], количество элементов [{1}]", x, rang[x].Length);
             int z = 0;
-            while (z < numbers[x].Length)
+            while (z < rang[x].Length)
             {
-               
-               summa += numbers[x][z];
-               Console.Write("{0} ", numbers[x][z]);
+               summa += rang[x][z];
+               Console.Write("{0} ", rang[x][z]);
                z++;
             }
 
