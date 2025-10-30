@@ -435,7 +435,6 @@ namespace FunctionsPartTwo
          numbers[0] = new[] { 1, 2 };
          numbers[1] = new[] { 1, 2, 3 };
          numbers[2] = new[] { 1, 2, 3, 4 };
-         // Перебор с помощью цикла
          int x = 0;
          while (x < numbers.Length)
          {
