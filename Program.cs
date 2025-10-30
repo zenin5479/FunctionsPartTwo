@@ -417,20 +417,20 @@ namespace FunctionsPartTwo
 
          Console.WriteLine();
 
-         int[][] rang = new int[3][];
-         rang[0] = new[] { 1, 2 };
-         rang[1] = new[] { 1, 2, 3 };
-         rang[2] = new[] { 1, 2, 3, 4 };
+         int[][] arrayarrays = new int[3][];
+         arrayarrays[0] = new[] { 1, 2 };
+         arrayarrays[1] = new[] { 1, 2, 3 };
+         arrayarrays[2] = new[] { 1, 2, 3, 4 };
          int x = 0;
          int summa = 0;
-         while (x < rang.Length)
+         while (x < arrayarrays.Length)
          {
-            Console.WriteLine("Массив массивов [{0}], количество элементов [{1}]", x, rang[x].Length);
+            Console.WriteLine("Массив массивов [{0}], количество элементов [{1}]", x, arrayarrays[x].Length);
             int z = 0;
-            while (z < rang[x].Length)
+            while (z < arrayarrays[x].Length)
             {
-               summa += rang[x][z];
-               Console.Write("{0} ", rang[x][z]);
+               summa += arrayarrays[x][z];
+               Console.Write("{0} ", arrayarrays[x][z]);
                z++;
             }
 
