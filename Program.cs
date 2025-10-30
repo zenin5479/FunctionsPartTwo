@@ -388,11 +388,11 @@ namespace FunctionsPartTwo
          // Инициализация массива массивов
          int[][] arrays = new int[5][];
          // Заполнение массивов
-         arrays[0] = new[] { 5, 7, 9 };
-         arrays[1] = new[] { 3, 8, 11 };
-         arrays[2] = new[] { 2, 9, 18 };
-         arrays[3] = new[] { 1, 3, 7 };
-         arrays[4] = new[] { 12, 17, 10 };
+         arrays[0] = new[] { 8, 8, 9 };
+         arrays[1] = new[] { 4, 6, 12 };
+         arrays[2] = new[] { 5, 8, 11 };
+         arrays[3] = new[] { 4, 6, 15 };
+         arrays[4] = new[] { 3, 8, 12 };
          // Поиск массива с максимальной суммой элементов
          int maxSum = 0;
          int[] resultArray = null;
@@ -400,6 +400,7 @@ namespace FunctionsPartTwo
          while (j < arrays.Length)
          {
             int currentSum = arrays[j].Sum();
+            Console.WriteLine(currentSum);
             if (currentSum > maxSum)
             {
                maxSum = currentSum;
