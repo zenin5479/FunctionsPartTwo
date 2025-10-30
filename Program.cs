@@ -414,21 +414,21 @@ namespace FunctionsPartTwo
          Console.WriteLine("Массив с наибольшей суммой элементов:");
          Console.WriteLine($"[{string.Join(", ", stockcollection)}]");
          Console.WriteLine("Сумма элементов: {0}", limitaggregate);
-         
+
          // Вычисление суммы элементов массива
          int[] numbers = { 1, 2, 3, 4, 5 };
          // Вызов метода вычисления суммы
          int sum = CalculateSum(numbers);
+         Console.WriteLine("Сумма элементов: {0}", sum);
          Console.WriteLine($"Сумма элементов массива: {sum}");
       }
 
       public static int CalculateSum(int[] array)
       {
          int sum = 0;
-         // Ручной подсчет суммы через цикл
-         
+         // Расчет суммы
          int i = 0;
-         while ( i < array.Length)
+         while (i < array.Length)
          {
             sum += array[i];
             i++;
