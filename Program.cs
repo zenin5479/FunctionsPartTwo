@@ -430,12 +430,8 @@ namespace FunctionsPartTwo
          int i = 0;
          while ( i < array.Length)
          {
-            i++;
-         }
-         
-         for ( )
-         {
             sum += array[i];
+            i++;
          }
 
          return sum;
