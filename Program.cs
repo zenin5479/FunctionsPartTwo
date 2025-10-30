@@ -386,25 +386,25 @@ namespace FunctionsPartTwo
          Console.WriteLine("Наибольшая сумма элементов массива массивов:");
          Console.WriteLine("--------------------------------------------");
          // Инициализация массива массивов
-         int[][] arrays = new int[5][];
+         int[][] range = new int[5][];
          // Заполнение массивов
-         arrays[0] = new[] { 8, 8, 9 };
-         arrays[1] = new[] { 4, 5, 6, 7 };
-         arrays[2] = new[] { 10, 14 };
-         arrays[3] = new[] { 1, 3, 6, 7, 8 };
-         arrays[4] = new[] { 1, 2, 3, 4, 5, 8 };
+         range[0] = new[] { 8, 8, 9 };
+         range[1] = new[] { 4, 5, 6, 7 };
+         range[2] = new[] { 10, 14 };
+         range[3] = new[] { 1, 3, 6, 7, 8 };
+         range[4] = new[] { 1, 2, 3, 4, 5, 8 };
          // Поиск массива с максимальной суммой элементов
          int limitaggregate = 0;
-         int[] resultArray = null;
+         int[] stockcollection = null;
          int j = 0;
-         while (j < arrays.Length)
+         while (j < range.Length)
          {
-            int currentSum = arrays[j].Sum();
-            Console.WriteLine(currentSum);
-            if (currentSum > limitaggregate)
+            int currenttotal = range[j].Sum();
+            Console.WriteLine(currenttotal);
+            if (currenttotal > limitaggregate)
             {
-               limitaggregate = currentSum;
-               resultArray = arrays[j];
+               limitaggregate = currenttotal;
+               stockcollection = range[j];
             }
 
             j++;
@@ -412,7 +412,7 @@ namespace FunctionsPartTwo
 
          // Вывод результата
          Console.WriteLine("Массив с наибольшей суммой элементов:");
-         Console.WriteLine($"[{string.Join(", ", resultArray)}]");
+         Console.WriteLine($"[{string.Join(", ", stockcollection)}]");
          Console.WriteLine($"Сумма элементов: {limitaggregate}");
 
       }
