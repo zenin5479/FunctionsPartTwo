@@ -413,7 +413,8 @@ namespace FunctionsPartTwo
          // Вывод результата
          Console.WriteLine("Массив с наибольшей суммой элементов:");
          Console.WriteLine($"[{string.Join(", ", stockcollection)}]");
-         Console.WriteLine($"Сумма элементов: {limitaggregate}");
+
+         Console.WriteLine("Сумма элементов: {0}", limitaggregate);
 
       }
    }
