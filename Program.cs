@@ -434,7 +434,7 @@ namespace FunctionsPartTwo
          int[][] numbers = new int[3][];
          numbers[0] = new[] { 1, 2 };
          numbers[1] = new[] { 1, 2, 3 };
-         numbers[2] = new[] { 1, 2, 3, 4, 5 };
+         numbers[2] = new[] { 1, 2, 3, 4 };
          // Перебор с помощью цикла
          int x = 0;
          while (x < numbers.Length)
@@ -443,7 +443,7 @@ namespace FunctionsPartTwo
             while (z < numbers[x].Length)
             {
 
-               Console.WriteLine("{0} ", numbers[x][z]);
+               Console.Write("{0} ", numbers[x][z]);
                //Console.Write($"{} \t");
                z++;
             }
