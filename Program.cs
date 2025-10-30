@@ -442,9 +442,7 @@ namespace FunctionsPartTwo
             int z = 0;
             while (z < numbers[x].Length)
             {
-
                Console.Write("{0} ", numbers[x][z]);
-               //Console.Write($"{} \t");
                z++;
             }
 
