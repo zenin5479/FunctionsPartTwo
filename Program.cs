@@ -424,7 +424,7 @@ namespace FunctionsPartTwo
          int summa = 0;
          while (x < arrayarrays.Length)
          {
-            Console.WriteLine("Массив массивов [{0}], количество элементов [{1}]", x, arrayarrays[x].Length);
+            Console.WriteLine("Массив с индексом [{0}] массива массивов размером {1}, количество элементов: [{2}]", x, arrayarrays.Rank, arrayarrays[x].Length);
             int z = 0;
             while (z < arrayarrays[x].Length)
             {
