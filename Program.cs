@@ -439,7 +439,6 @@ namespace FunctionsPartTwo
             Console.WriteLine();
             Console.WriteLine("Сумма элементов: {0}", summa);
             totalelements[x] = summa;
-
             summa = 0;
             x++;
          }
