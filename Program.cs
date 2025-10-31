@@ -422,10 +422,10 @@ namespace FunctionsPartTwo
          arrayarrays[2] = new[] { 1, 2, 3, 4 };
          int x = 0;
          int summa = 0;
-         Console.WriteLine("Массив массивов размером [{0}]", arrayarrays.Length);
+         Console.WriteLine("Массив массивов размером: [{0}]", arrayarrays.Length);
          while (x < arrayarrays.Length)
          {
-            Console.WriteLine("Массив с индексом [{0}] массива массивов размером [{1}], количество элементов: [{2}]", x, arrayarrays.Length, arrayarrays[x].Length);
+            Console.WriteLine("Массив с индексом [{0}], количество элементов: [{1}]", x, arrayarrays[x].Length);
             int z = 0;
             while (z < arrayarrays[x].Length)
             {
