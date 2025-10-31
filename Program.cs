@@ -416,7 +416,6 @@ namespace FunctionsPartTwo
          Console.WriteLine("Сумма элементов: {0}", limitaggregate);
 
          Console.WriteLine();
-
          int[][] arrayarrays = new int[3][];
          arrayarrays[0] = new[] { 1, 2 };
          arrayarrays[1] = new[] { 1, 2, 3 };
