@@ -420,6 +420,8 @@ namespace FunctionsPartTwo
          arrayarrays[0] = new[] { 1, 2 };
          arrayarrays[1] = new[] { 1, 2, 3 };
          arrayarrays[2] = new[] { 1, 2, 3, 4 };
+
+         int[] totalelements = new int [arrayarrays.Length];
          int x = 0;
          int summa = 0;
          Console.WriteLine("Массив массивов [{0}][]:", arrayarrays.Length);
@@ -436,6 +438,7 @@ namespace FunctionsPartTwo
 
             Console.WriteLine();
             Console.WriteLine("Сумма элементов: {0}", summa);
+            totalelements[x] = summa;
             summa = 0;
             x++;
          }
