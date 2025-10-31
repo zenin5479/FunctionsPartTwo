@@ -425,7 +425,7 @@ namespace FunctionsPartTwo
          Console.WriteLine("Массив массивов [{0}][]:", arrayarrays.Length);
          while (x < arrayarrays.Length)
          {
-            Console.WriteLine("Массив [{0}][{1}]:", x, arrayarrays[x].Length);
+            Console.WriteLine("Массив с индексом [{0}], количество элементов: [{1}]", x, arrayarrays[x].Length);
             int z = 0;
             while (z < arrayarrays[x].Length)
             {
