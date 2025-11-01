@@ -501,7 +501,7 @@ namespace FunctionsPartTwo
             Console.WriteLine(maxindex);
          }
 
-         MaxIndexArray(totalelements, );
+         MaxIndexArray(totalelements, max);
 
          Console.ReadKey();
       }
