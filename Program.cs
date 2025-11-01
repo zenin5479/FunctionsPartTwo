@@ -413,17 +413,21 @@ namespace FunctionsPartTwo
          // Вывод результата
          Console.WriteLine("Массив с наибольшей суммой элементов:");
          // Метод распечатки массива
-
-         
          void OutputtingArray(int[] cluster)
          {
-            int i = 0;
-            while (i < cluster.Length)
+            int s = 0;
+            Console.Write("[");
+            while (s < cluster.Length)
             {
-               Console.Write(cluster[i] + " ");
-               i++;
-            }
+               if (s == cluster.Length - 1)
+               {
 
+               }
+
+               Console.Write(cluster[s] + ", ");
+               s++;
+            }
+            Console.WriteLine("]");
             Console.WriteLine();
          }
 
@@ -437,7 +441,7 @@ namespace FunctionsPartTwo
          arrayarrays[1] = new[] { 1, 2, 3 };
          arrayarrays[2] = new[] { 1, 2, 3, 4 };
 
-         int[] totalelements = new int [arrayarrays.Length];
+         int[] totalelements = new int[arrayarrays.Length];
          int x = 0;
          int summa = 0;
          Console.WriteLine("Массив массивов [{0}][]:", arrayarrays.Length);
