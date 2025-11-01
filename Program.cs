@@ -484,7 +484,6 @@ namespace FunctionsPartTwo
 
          MaxSumArray(totalelements);
 
-
          Console.ReadKey();
       }
 
