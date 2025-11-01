@@ -421,10 +421,13 @@ namespace FunctionsPartTwo
             {
                if (s == cluster.Length - 1)
                {
-
+                  Console.Write(cluster[s] + "");
+               }
+               else
+               {
+                  Console.Write(cluster[s] + ", ");
                }
 
-               Console.Write(cluster[s] + ", ");
                s++;
             }
             Console.WriteLine("]");
