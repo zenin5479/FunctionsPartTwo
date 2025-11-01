@@ -492,7 +492,7 @@ namespace FunctionsPartTwo
             {
                if (maxim == totalel[column] && maxindex< column)
                {
-                  maxindex = totalel[column];
+                  maxindex = column;
                }
 
                column++;
