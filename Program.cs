@@ -467,22 +467,26 @@ namespace FunctionsPartTwo
 
          void MaxSumArray(int[] sum)
          {
-            int s = 0;
-            int avg = sum[0];
-            Console.Write("[");
-            while (s < sum.Length)
+
+
+
+            // Поиск максимального элемента строки (без флагов bool)
+            // Cчитаем, что максимум - это первый элемент строки
+            int max = sum[0];
+            int column = 0;
+            while (column < sum.Length)
             {
-               if (s == sum.Length - 1)
+               if (max < sum[column])
                {
-                  Console.Write(sum[s] + "");
-               }
-               else
-               {
-                  Console.Write(sum[s] + ", ");
+                  max = sum[column];
                }
 
-               s++;
+               column++;
             }
+
+
+
+
 
             Console.WriteLine("]");
          }
