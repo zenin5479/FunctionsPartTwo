@@ -486,25 +486,5 @@ namespace FunctionsPartTwo
 
          Console.ReadKey();
       }
-
-      public static int FindMaxArrayInt(int[] inputArray)
-      {
-         // Поиск максимального элемента строки (без флагов bool)
-         // Cчитаем, что максимум - это первый элемент строки
-         int max = inputArray[0];
-         int column = 0;
-         while (column < inputArray.Length)
-         {
-            if (max < inputArray[column])
-            {
-               max = inputArray[column];
-            }
-
-            column++;
-         }
-
-         Console.WriteLine("Максимум в массиве равен: {0}", max);
-         return max;
-      }
    }
 }
