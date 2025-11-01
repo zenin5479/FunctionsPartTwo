@@ -439,7 +439,7 @@ namespace FunctionsPartTwo
 
          Console.WriteLine();
          int[][] arrayarrays = new int[4][];
-         arrayarrays[0] = new[] { 1, 2 };
+         arrayarrays[0] = new[] { 7, 8 };
          arrayarrays[1] = new[] { 1, 2, 3 };
          arrayarrays[2] = new[] { 1, 2, 3, 4 };
          arrayarrays[3] = new[] { 1, 2, 3, 4, 5 };
