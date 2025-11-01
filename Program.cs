@@ -486,19 +486,19 @@ namespace FunctionsPartTwo
          //
          void MaxIndexArray(int[] totalel, int maxim)
          {
-            int maxindex = totalel.Length;
+            int minindex = 0;
             int column = 0;
             while (column < totalel.Length)
             {
-               if (maxim == totalel[column] && maxindex < column)
+               if (maxim == totalel[column] && minindex < column)
                {
-                  maxindex = column;
+                  minindex = column;
                }
 
                column++;
             }
 
-            Console.WriteLine(maxindex);
+            Console.WriteLine(minindex);
          }
 
          MaxIndexArray(totalelements, max);
