@@ -467,7 +467,6 @@ namespace FunctionsPartTwo
 
          void MaxSumArray(int[] sum)
          {
-            // Поиск максимального элемента строки (без флагов bool)
             // Cчитаем, что максимум - это первый элемент строки
             int max = sum[0];
             int column = 0;
