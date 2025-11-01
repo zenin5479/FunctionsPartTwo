@@ -465,6 +465,27 @@ namespace FunctionsPartTwo
             x++;
          }
 
+         void MaxSumArray(int[] cluster)
+         {
+            int s = 0;
+            Console.Write("[");
+            while (s < cluster.Length)
+            {
+               if (s == cluster.Length - 1)
+               {
+                  Console.Write(cluster[s] + "");
+               }
+               else
+               {
+                  Console.Write(cluster[s] + ", ");
+               }
+
+               s++;
+            }
+
+            Console.WriteLine("]");
+         }
+
          Console.ReadKey();
       }
    }
