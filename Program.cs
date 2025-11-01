@@ -490,6 +490,9 @@ namespace FunctionsPartTwo
             int column = 0;
             while (column < totalel.Length)
             {
+               
+               
+               
                if (maxindex < totalel[column])
                {
                   maxindex = totalel[column];
