@@ -415,12 +415,12 @@ namespace FunctionsPartTwo
          // Метод распечатки массива
 
          
-         void OutputtingArray(int[] group)
+         void OutputtingArray(int[] cluster)
          {
             int i = 0;
-            while (i < group.Length)
+            while (i < cluster.Length)
             {
-               Console.Write(group[i] + " ");
+               Console.Write(cluster[i] + " ");
                i++;
             }
 
