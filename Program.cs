@@ -431,7 +431,6 @@ namespace FunctionsPartTwo
                s++;
             }
             Console.WriteLine("]");
-            //Console.WriteLine();
          }
 
          OutputtingArray(stockcollection);
