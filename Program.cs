@@ -483,6 +483,25 @@ namespace FunctionsPartTwo
          }
 
          MaxSumArray(totalelements);
+         //
+         void MaxIndexArray(int[] sum)
+         {
+            int max = sum[0];
+            int column = 0;
+            while (column < sum.Length)
+            {
+               if (max < sum[column])
+               {
+                  max = sum[column];
+               }
+
+               column++;
+            }
+
+            Console.WriteLine(max);
+         }
+
+         MaxIndexArray(totalelements);
 
          Console.ReadKey();
       }
