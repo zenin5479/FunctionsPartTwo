@@ -414,8 +414,8 @@ namespace FunctionsPartTwo
          Console.WriteLine("Массив с наибольшей суммой элементов:");
          // Метод распечатки массива
 
-         outputting an array
-         void PrintArrayInt(int[] group)
+         
+         void OutputtingArray(int[] group)
          {
             int i = 0;
             while (i < group.Length)
@@ -427,7 +427,7 @@ namespace FunctionsPartTwo
             Console.WriteLine();
          }
 
-         PrintArrayInt(chance);
+         OutputtingArray(chance);
          Console.WriteLine($"[{string.Join(", ", stockcollection)}]");
          Console.WriteLine("Сумма элементов: {0}", limitaggregate);
 
