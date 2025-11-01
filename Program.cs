@@ -431,11 +431,11 @@ namespace FunctionsPartTwo
                s++;
             }
             Console.WriteLine("]");
-            Console.WriteLine();
+            //Console.WriteLine();
          }
 
          OutputtingArray(stockcollection);
-         Console.WriteLine($"[{string.Join(", ", stockcollection)}]");
+         //Console.WriteLine($"[{string.Join(", ", stockcollection)}]");
          Console.WriteLine("Сумма элементов: {0}", limitaggregate);
 
          Console.WriteLine();
