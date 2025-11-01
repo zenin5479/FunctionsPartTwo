@@ -427,7 +427,7 @@ namespace FunctionsPartTwo
             Console.WriteLine();
          }
 
-         OutputtingArray(chance);
+         OutputtingArray(stockcollection);
          Console.WriteLine($"[{string.Join(", ", stockcollection)}]");
          Console.WriteLine("Сумма элементов: {0}", limitaggregate);
 
