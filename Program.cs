@@ -499,8 +499,6 @@ namespace FunctionsPartTwo
                column++;
             }
 
-
-
             int[] arr = new int[count];
             int colum = 0;
 
