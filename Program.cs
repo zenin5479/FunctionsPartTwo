@@ -486,7 +486,7 @@ namespace FunctionsPartTwo
          //
          void MaxIndexArray(int[] totalel, int maxim)
          {
-            int minindex = -1;
+
             int count = 0;
             int column = 0;
             while (column < totalel.Length)
@@ -508,13 +508,13 @@ namespace FunctionsPartTwo
                {
                   arr[row] = colum;
                   row++;
-                  //colum++;
                   Console.WriteLine(colum);
                }
 
                colum++;
             }
 
+            int minindex = -1;
             Console.WriteLine(minindex);
          }
 
