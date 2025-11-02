@@ -499,6 +499,8 @@ namespace FunctionsPartTwo
                column++;
             }
 
+
+
             Console.WriteLine(minindex);
          }
 
