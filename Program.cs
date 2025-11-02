@@ -501,7 +501,6 @@ namespace FunctionsPartTwo
 
             int[] arr = new int[count];
             int colum = 0;
-
             while (colum < totalel.Length)
             {
                if (maxim == totalel[colum])
@@ -511,13 +510,13 @@ namespace FunctionsPartTwo
                   {
                      arr[row] = colum;
                      row++;
-                     //colum++;
+                     colum++;
                   }
 
                   Console.WriteLine(colum);
                }
 
-               colum++;
+               //colum++;
             }
 
             //Console.WriteLine(minindex);
