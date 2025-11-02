@@ -501,18 +501,14 @@ namespace FunctionsPartTwo
 
             int[] arr = new int[count];
             int colum = 0;
+            int row = 0;
             while (colum < totalel.Length)
             {
                if (maxim == totalel[colum])
                {
-                  int row = 0;
-                  while (row < arr.Length)
-                  {
-                     arr[row] = colum;
-                     row++;
-                     //colum++;
-                  }
-
+                  arr[row] = colum;
+                  row++;
+                  //colum++;
                   Console.WriteLine(colum);
                }
 
