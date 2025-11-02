@@ -505,7 +505,8 @@ namespace FunctionsPartTwo
             {
                if (maxim == totalel[colum])
                {
-                  minindex = colum;
+                  arr[colum] = colum;
+                  Console.WriteLine(colum);
                }
 
                colum++;
