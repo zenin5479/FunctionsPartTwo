@@ -487,15 +487,15 @@ namespace FunctionsPartTwo
          void MaxIndexArray(int[] totalel, int maxim)
          {
             int length = 0;
-            int column = 0;
-            while (column < totalel.Length)
+            int col = 0;
+            while (col < totalel.Length)
             {
-               if (maxim == totalel[column])
+               if (maxim == totalel[col])
                {
                   length++;
                }
 
-               column++;
+               col++;
             }
 
             int[] arrmaxim = new int[length];
