@@ -499,7 +499,6 @@ namespace FunctionsPartTwo
                column++;
             }
 
-            MaxIndexArray(totalelements, max);
 
 
             int[] arr = new int[count];
@@ -523,10 +522,10 @@ namespace FunctionsPartTwo
                colum++;
             }
 
-            Console.WriteLine(minindex);
+            //Console.WriteLine(minindex);
          }
 
-
+         MaxIndexArray(totalelements, max);
 
          Console.ReadKey();
       }
