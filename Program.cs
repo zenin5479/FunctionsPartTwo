@@ -493,13 +493,23 @@ namespace FunctionsPartTwo
             {
                if (maxim == totalel[column])
                {
-                  minindex = column;
+                  count ++;
                }
 
                column++;
             }
 
+            int[] arr = new int[count];
+            int colum = 0;
+            while (colum < totalel.Length)
+            {
+               if (maxim == totalel[colum])
+               {
+                  minindex = colum;
+               }
 
+               colum++;
+            }
 
             Console.WriteLine(minindex);
          }
