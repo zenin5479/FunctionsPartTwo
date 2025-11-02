@@ -510,16 +510,16 @@ namespace FunctionsPartTwo
                   {
                      arr[row] = colum;
                      row++;
-                     colum++;
+                     //colum++;
                   }
 
                   Console.WriteLine(colum);
                }
 
-               //colum++;
+               colum++;
             }
 
-            //Console.WriteLine(minindex);
+            Console.WriteLine(minindex);
          }
 
          MaxIndexArray(totalelements, max);
