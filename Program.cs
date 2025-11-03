@@ -514,6 +514,9 @@ namespace FunctionsPartTwo
             }
 
             int minindex = -1;
+
+
+
             Console.WriteLine(minindex);
          }
 
