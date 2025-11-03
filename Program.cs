@@ -488,12 +488,12 @@ namespace FunctionsPartTwo
          {
             int length = 0;
             int col = 0;
-            int maxncol = totalel.Length;
+            int minncol = totalel.Length;
             while (col < totalel.Length)
             {
-               if (maxim == totalel[col] && maxncol < col)
+               if (maxim == totalel[col] && minncol < col)
                {
-                  maxncol = col;
+                  minncol = col;
                   length++;
                }
 
