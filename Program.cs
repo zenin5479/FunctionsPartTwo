@@ -485,15 +485,15 @@ namespace FunctionsPartTwo
 
             // Определяем минимальный индекс одинаковых максимальных сумм элементов массива
             int minindex = indexsumm[0];
-            int column = 0;
-            while (column < indexsumm.Length)
+            int line = 0;
+            while (line < indexsumm.Length)
             {
-               if (minindex > indexsumm[column])
+               if (minindex > indexsumm[line])
                {
-                  minindex = indexsumm[column];
+                  minindex = indexsumm[line];
                }
 
-               column++;
+               line++;
             }
 
             return minindex;
