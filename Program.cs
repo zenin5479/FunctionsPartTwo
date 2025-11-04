@@ -464,7 +464,7 @@ namespace FunctionsPartTwo
             amount = 0;
             x++;
          }
-         
+
          int maxamount;
          void MaxSumArray(int[] arrayamounts)
          {
@@ -514,10 +514,7 @@ namespace FunctionsPartTwo
                colum++;
             }
 
-            // Поиск максимального и минимального элемента массива
-            // Cчитаем, что максимум - это первый элемент массива
             int indexmax = arrmaxim[0];
-            // Cчитаем, что минимум - это первый элемент массива
             int minindex = arrmaxim[0];
             int column = 0;
             while (column < arrmaxim.Length)
@@ -540,7 +537,7 @@ namespace FunctionsPartTwo
             return minindex;
          }
 
-         int tyr =MaxIndexArray(countelements, maxamount);
+         int tyr = MaxIndexArray(countelements, maxamount);
 
          OutputtingArray(arrayarrays[tyr]);
 
