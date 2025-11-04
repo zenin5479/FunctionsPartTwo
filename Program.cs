@@ -484,13 +484,13 @@ namespace FunctionsPartTwo
 
          MaxSumArray(totalelements);
 
-         int MaxIndexArray(int[] totalel, int maxim)
+         int MaxIndexArray(int[] total, int maxim)
          {
             int length = 0;
             int col = 0;
-            while (col < totalel.Length)
+            while (col < total.Length)
             {
-               if (maxim == totalel[col])
+               if (maxim == total[col])
                {
                   length++;
                }
@@ -501,9 +501,9 @@ namespace FunctionsPartTwo
             int[] arrmaxim = new int[length];
             int colum = 0;
             int row = 0;
-            while (colum < totalel.Length)
+            while (colum < total.Length)
             {
-               if (maxim == totalel[colum])
+               if (maxim == total[colum])
                {
                   arrmaxim[row] = colum;
                   row++;
