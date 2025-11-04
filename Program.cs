@@ -449,7 +449,6 @@ namespace FunctionsPartTwo
                column++;
             }
 
-            //Console.WriteLine(maxamount);
             return maxamount;
          }
 
@@ -478,7 +477,6 @@ namespace FunctionsPartTwo
                {
                   arrmaxim[row] = colum;
                   row++;
-                  Console.WriteLine(colum);
                }
 
                colum++;
@@ -496,7 +494,6 @@ namespace FunctionsPartTwo
                column++;
             }
 
-            Console.WriteLine("Минимальный индекс равен: {0}", minindex);
             return minindex;
          }
 
