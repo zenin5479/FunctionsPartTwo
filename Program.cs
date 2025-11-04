@@ -484,7 +484,7 @@ namespace FunctionsPartTwo
 
          MaxSumArray(totalelements);
 
-         void MaxIndexArray(int[] totalel, int maxim)
+         int MaxIndexArray(int[] totalel, int maxim)
          {
             int length = 0;
             int col = 0;
@@ -536,9 +536,12 @@ namespace FunctionsPartTwo
 
             Console.WriteLine("Максимальный индекс равен: {0}", indexmax);
             Console.WriteLine("Минимальный индекс равен: {0}", minindex);
+            return minindex;
          }
 
-         MaxIndexArray(totalelements, max);
+         int tyr =MaxIndexArray(totalelements, max);
+
+         OutputtingArray(arrayarrays[tyr]);
 
          Console.ReadKey();
       }
