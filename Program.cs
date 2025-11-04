@@ -469,27 +469,27 @@ namespace FunctionsPartTwo
             }
 
             // Создаем и заполняем массив значениями индексов одинаковых максимальных сумм
-            int[] arrmaxim = new int[length];
+            int[] indexsumm = new int[length];
             int calculator = 0;
             int count = 0;
             while (calculator < total.Length)
             {
                if (maxtotal == total[calculator])
                {
-                  arrmaxim[count] = calculator;
+                  indexsumm[count] = calculator;
                   count++;
                }
 
                calculator++;
             }
 
-            int minindex = arrmaxim[0];
+            int minindex = indexsumm[0];
             int column = 0;
-            while (column < arrmaxim.Length)
+            while (column < indexsumm.Length)
             {
-               if (minindex > arrmaxim[column])
+               if (minindex > indexsumm[column])
                {
-                  minindex = arrmaxim[column];
+                  minindex = indexsumm[column];
                }
 
                column++;
