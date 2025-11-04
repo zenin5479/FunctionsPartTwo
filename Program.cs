@@ -513,21 +513,18 @@ namespace FunctionsPartTwo
                colum++;
             }
 
-            int minindex = 0;
+
             int colums = 0;
+            int minindex = arrmaxim[0];
             while (colums < arrmaxim.Length)
             {
                if (minindex < arrmaxim[colums])
                {
                   minindex = arrmaxim[colums];
-                  Console.WriteLine(colums);
                }
 
                colums++;
             }
-
-
-
 
             Console.WriteLine(minindex);
          }
