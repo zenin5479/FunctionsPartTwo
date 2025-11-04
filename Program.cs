@@ -500,7 +500,7 @@ namespace FunctionsPartTwo
          }
 
          int indexminarray = MinIndexArray(countelements, maxsum);
-         Console.WriteLine("Массив с наибольшей суммой элементов - {0} и наименьшим индексом массива массивов - [{1}]",
+         Console.WriteLine("Массив с наибольшей суммой элементов: [{0}] и наименьшим индексом массива массивов: [{1}][]",
             countelements[indexminarray], indexminarray);
          OutputtingArray(arrayarrays[indexminarray]);
 
