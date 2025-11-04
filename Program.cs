@@ -514,6 +514,20 @@ namespace FunctionsPartTwo
             }
 
             int minindex = -1;
+            int colums = 0;
+            int rows = 0;
+            while (colums < totalel.Length)
+            {
+               if (maxim == totalel[colums])
+               {
+                  arrmaxim[rows] = colums;
+                  rows++;
+                  Console.WriteLine(colums);
+               }
+
+               colums++;
+            }
+
 
 
 
