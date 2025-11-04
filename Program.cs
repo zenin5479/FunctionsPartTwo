@@ -443,7 +443,7 @@ namespace FunctionsPartTwo
          arrayarrays[1] = new[] { 1, 2, 3 };
          arrayarrays[2] = new[] { 1, 2, 3, 4 };
          arrayarrays[3] = new[] { 1, 2, 3, 4, 5 };
-         int[] totalelements = new int[arrayarrays.Length];
+         int[] countelements = new int[arrayarrays.Length];
          int x = 0;
          int summa = 0;
          Console.WriteLine("Массив массивов [{0}][]:", arrayarrays.Length);
@@ -460,7 +460,7 @@ namespace FunctionsPartTwo
 
             Console.WriteLine();
             Console.WriteLine("Сумма элементов: {0}", summa);
-            totalelements[x] = summa;
+            countelements[x] = summa;
             summa = 0;
             x++;
          }
@@ -482,7 +482,7 @@ namespace FunctionsPartTwo
             Console.WriteLine(maxsumma);
          }
 
-         MaxSumArray(totalelements);
+         MaxSumArray(countelements);
 
          int MaxIndexArray(int[] total, int maxim)
          {
@@ -539,7 +539,7 @@ namespace FunctionsPartTwo
             return minindex;
          }
 
-         int tyr =MaxIndexArray(totalelements, maxsumma);
+         int tyr =MaxIndexArray(countelements, maxsumma);
 
          OutputtingArray(arrayarrays[tyr]);
 
