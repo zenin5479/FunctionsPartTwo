@@ -486,7 +486,7 @@ namespace FunctionsPartTwo
 
          int maxsum = MaxSumArray(countelements);
 
-         int MaxIndexArray(int[] total, int maxim)
+         int MinIndexArray(int[] total, int maxim)
          {
             int length = 0;
             int col = 0;
@@ -531,9 +531,9 @@ namespace FunctionsPartTwo
             return minindex;
          }
 
-         int indexmaxarray = MaxIndexArray(countelements, maxsum);
+         int indexminarray = MinIndexArray(countelements, maxsum);
 
-         OutputtingArray(arrayarrays[indexmaxarray]);
+         OutputtingArray(arrayarrays[indexminarray]);
 
          Console.ReadKey();
       }
