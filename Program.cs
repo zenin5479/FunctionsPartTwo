@@ -465,9 +465,9 @@ namespace FunctionsPartTwo
             x++;
          }
 
-         int maxamount;
-         void MaxSumArray(int[] arrayamounts)
+         int MaxSumArray(int[] arrayamounts)
          {
+            int maxamount;
             maxamount = arrayamounts[0];
             int column = 0;
             while (column < arrayamounts.Length)
@@ -481,9 +481,10 @@ namespace FunctionsPartTwo
             }
 
             Console.WriteLine(maxamount);
+            return maxamount;
          }
 
-         MaxSumArray(countelements);
+         int maxamount = MaxSumArray(countelements);
 
          int MaxIndexArray(int[] total, int maxim)
          {
