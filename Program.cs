@@ -483,6 +483,7 @@ namespace FunctionsPartTwo
                calculator++;
             }
 
+            // Определяем минимальный индекс одинаковых максимальных сумм элементов массива
             int minindex = indexsumm[0];
             int column = 0;
             while (column < indexsumm.Length)
