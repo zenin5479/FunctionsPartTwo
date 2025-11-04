@@ -455,6 +455,8 @@ namespace FunctionsPartTwo
 
          int MinIndexArray(int[] total, int maxtotal)
          {
+            
+            
             int length = 0;
             int register = 0;
             while (register < total.Length)
