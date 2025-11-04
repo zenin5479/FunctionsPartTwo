@@ -549,9 +549,6 @@ namespace FunctionsPartTwo
 
             Console.WriteLine("Максимум равен: {0}", indexmax);
             Console.WriteLine("Минимум равен: {0}", minindex);
-
-
-            Console.WriteLine(minindex);
          }
 
          MaxIndexArray(totalelements, max);
