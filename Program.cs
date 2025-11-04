@@ -445,7 +445,7 @@ namespace FunctionsPartTwo
          arrayarrays[3] = new[] { 1, 2, 3, 4, 5 };
          int[] countelements = new int[arrayarrays.Length];
          int x = 0;
-         int summa = 0;
+         int amount = 0;
          Console.WriteLine("Массив массивов [{0}][]:", arrayarrays.Length);
          while (x < arrayarrays.Length)
          {
@@ -453,15 +453,15 @@ namespace FunctionsPartTwo
             int z = 0;
             while (z < arrayarrays[x].Length)
             {
-               summa += arrayarrays[x][z];
+               amount += arrayarrays[x][z];
                Console.Write("{0} ", arrayarrays[x][z]);
                z++;
             }
 
             Console.WriteLine();
-            Console.WriteLine("Сумма элементов: {0}", summa);
-            countelements[x] = summa;
-            summa = 0;
+            Console.WriteLine("Сумма элементов: {0}", amount);
+            countelements[x] = amount;
+            amount = 0;
             x++;
          }
          int maxsumma;
