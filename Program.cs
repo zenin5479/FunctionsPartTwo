@@ -538,9 +538,9 @@ namespace FunctionsPartTwo
             return minindex;
          }
 
-         int indexMaxArray = MaxIndexArray(countelements, maxsum);
+         int indexmaxarray = MaxIndexArray(countelements, maxsum);
 
-         OutputtingArray(arrayarrays[indexMaxArray]);
+         OutputtingArray(arrayarrays[indexmaxarray]);
 
          Console.ReadKey();
       }
