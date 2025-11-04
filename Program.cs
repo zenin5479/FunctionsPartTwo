@@ -547,8 +547,8 @@ namespace FunctionsPartTwo
                column++;
             }
 
-            Console.WriteLine("Максимум равен: {0}", max);
-            Console.WriteLine("Минимум равен: {0}", min);
+            Console.WriteLine("Максимум равен: {0}", indexmax);
+            Console.WriteLine("Минимум равен: {0}", minindex);
 
 
             Console.WriteLine(minindex);
