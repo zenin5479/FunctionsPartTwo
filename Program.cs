@@ -514,17 +514,42 @@ namespace FunctionsPartTwo
             }
 
 
-            int colums = 0;
+            //int colums = 0;
+            //int minindex = arrmaxim[0];
+            //while (colums < arrmaxim.Length)
+            //{
+            //   if (minindex < arrmaxim[colums])
+            //   {
+            //      minindex = arrmaxim[colums];
+            //   }
+
+            //   colums++;
+            //}
+
+            // Поиск максимального и минимального элемента массива
+            // Cчитаем, что максимум - это первый элемент массива
+            int indexmax = arrmaxim[0];
+            // Cчитаем, что минимум - это первый элемент массива
             int minindex = arrmaxim[0];
-            while (colums < arrmaxim.Length)
+            int column = 0;
+            while (column < arrmaxim.Length)
             {
-               if (minindex < arrmaxim[colums])
+               if (indexmax < arrmaxim[column])
                {
-                  minindex = arrmaxim[colums];
+                  indexmax = arrmaxim[column];
                }
 
-               colums++;
+               if (minindex > arrmaxim[column])
+               {
+                  minindex = arrmaxim[column];
+               }
+
+               column++;
             }
+
+            Console.WriteLine("Максимум равен: {0}", max);
+            Console.WriteLine("Минимум равен: {0}", min);
+
 
             Console.WriteLine(minindex);
          }
