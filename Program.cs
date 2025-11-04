@@ -515,16 +515,10 @@ namespace FunctionsPartTwo
                colum++;
             }
 
-            int maxindex = arrmaxim[0];
             int minindex = arrmaxim[0];
             int column = 0;
             while (column < arrmaxim.Length)
             {
-               if (maxindex < arrmaxim[column])
-               {
-                  maxindex = arrmaxim[column];
-               }
-
                if (minindex > arrmaxim[column])
                {
                   minindex = arrmaxim[column];
@@ -533,7 +527,6 @@ namespace FunctionsPartTwo
                column++;
             }
 
-            Console.WriteLine("Максимальный индекс равен: {0}", maxindex);
             Console.WriteLine("Минимальный индекс равен: {0}", minindex);
             return minindex;
          }
