@@ -419,10 +419,11 @@ namespace FunctionsPartTwo
          {
             Console.WriteLine("Массив [{0}][{1}]", l, arrayarrays[l].Length);
             int z = 0;
-            // Заменить на OutputtingArray
+
             while (z < arrayarrays[l].Length)
             {
                amount += arrayarrays[l][z];
+               // Заменить на OutputtingArray
                Console.Write("{0} ", arrayarrays[l][z]);
                z++;
             }
