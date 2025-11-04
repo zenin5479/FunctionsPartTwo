@@ -464,22 +464,22 @@ namespace FunctionsPartTwo
             summa = 0;
             x++;
          }
-         int max;
+         int maxsumma;
          void MaxSumArray(int[] sum)
          {
-            max = sum[0];
+            maxsumma = sum[0];
             int column = 0;
             while (column < sum.Length)
             {
-               if (max < sum[column])
+               if (maxsumma < sum[column])
                {
-                  max = sum[column];
+                  maxsumma = sum[column];
                }
 
                column++;
             }
 
-            Console.WriteLine(max);
+            Console.WriteLine(maxsumma);
          }
 
          MaxSumArray(totalelements);
@@ -539,7 +539,7 @@ namespace FunctionsPartTwo
             return minindex;
          }
 
-         int tyr =MaxIndexArray(totalelements, max);
+         int tyr =MaxIndexArray(totalelements, maxsumma);
 
          OutputtingArray(arrayarrays[tyr]);
 
