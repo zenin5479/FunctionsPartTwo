@@ -483,7 +483,7 @@ namespace FunctionsPartTwo
          }
 
          MaxSumArray(totalelements);
-         //
+
          void MaxIndexArray(int[] totalel, int maxim)
          {
             int length = 0;
