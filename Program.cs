@@ -468,6 +468,7 @@ namespace FunctionsPartTwo
                register++;
             }
 
+            // Создаем и заполняем массив значениями индексов одинаковых максимальных сумм
             int[] arrmaxim = new int[length];
             int calculator = 0;
             int count = 0;
