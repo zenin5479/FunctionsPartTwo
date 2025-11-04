@@ -385,33 +385,6 @@ namespace FunctionsPartTwo
          Console.WriteLine("--------------------------------------------");
          Console.WriteLine("Наибольшая сумма элементов массива массивов:");
          Console.WriteLine("--------------------------------------------");
-         // Инициализация массива массивов
-         int[][] range = new int[5][];
-         // Заполнение массивов
-         range[0] = new[] { 8, 8, 9 };
-         range[1] = new[] { 4, 5, 6, 7 };
-         range[2] = new[] { 10, 14 };
-         range[3] = new[] { 1, 3, 6, 7, 8 };
-         range[4] = new[] { 1, 2, 3, 4, 5, 8 };
-         // Поиск массива с максимальной суммой элементов
-         int limitaggregate = 0;
-         int[] stockcollection = null;
-         int j = 0;
-         while (j < range.Length)
-         {
-            int currenttotal = range[j].Sum();
-            Console.WriteLine(currenttotal);
-            if (currenttotal > limitaggregate)
-            {
-               limitaggregate = currenttotal;
-               stockcollection = range[j];
-            }
-
-            j++;
-         }
-
-         // Вывод результата
-         Console.WriteLine("Массив с наибольшей суммой элементов:");
          // Метод распечатки массива
          void OutputtingArray(int[] cluster)
          {
@@ -433,16 +406,12 @@ namespace FunctionsPartTwo
 
             Console.WriteLine("]");
          }
-
-         OutputtingArray(stockcollection);
-         Console.WriteLine("Сумма элементов: {0}", limitaggregate);
-
-         Console.WriteLine();
          int[][] arrayarrays = new int[4][];
-         arrayarrays[0] = new[] { 7, 8 };
-         arrayarrays[1] = new[] { 1, 2, 3 };
-         arrayarrays[2] = new[] { 1, 2, 3, 4 };
-         arrayarrays[3] = new[] { 1, 2, 3, 4, 5 };
+         arrayarrays[0] = new[] { 8, 8, 9 };
+         arrayarrays[1] = new[] { 4, 5, 6, 7 };
+         arrayarrays[2] = new[] { 10, 14 };
+         arrayarrays[3] = new[] { 1, 3, 6, 7, 8 };
+         arrayarrays[4] = new[] { 1, 2, 3, 4, 5, 8 };
          int[] countelements = new int[arrayarrays.Length];
          int x = 0;
          int amount = 0;
