@@ -456,29 +456,29 @@ namespace FunctionsPartTwo
          int MinIndexArray(int[] total, int maxtotal)
          {
             int length = 0;
-            int col = 0;
-            while (col < total.Length)
+            int register = 0;
+            while (register < total.Length)
             {
-               if (maxtotal == total[col])
+               if (maxtotal == total[register])
                {
                   length++;
                }
 
-               col++;
+               register++;
             }
 
             int[] arrmaxim = new int[length];
-            int colum = 0;
-            int row = 0;
-            while (colum < total.Length)
+            int calculator = 0;
+            int count = 0;
+            while (calculator < total.Length)
             {
-               if (maxtotal == total[colum])
+               if (maxtotal == total[calculator])
                {
-                  arrmaxim[row] = colum;
-                  row++;
+                  arrmaxim[count] = calculator;
+                  count++;
                }
 
-               colum++;
+               calculator++;
             }
 
             int minindex = arrmaxim[0];
