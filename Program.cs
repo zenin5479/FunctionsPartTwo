@@ -486,13 +486,13 @@ namespace FunctionsPartTwo
 
          int maxsum = MaxSumArray(countelements);
 
-         int MinIndexArray(int[] total, int maxim)
+         int MinIndexArray(int[] total, int maxtotal)
          {
             int length = 0;
             int col = 0;
             while (col < total.Length)
             {
-               if (maxim == total[col])
+               if (maxtotal == total[col])
                {
                   length++;
                }
@@ -505,7 +505,7 @@ namespace FunctionsPartTwo
             int row = 0;
             while (colum < total.Length)
             {
-               if (maxim == total[colum])
+               if (maxtotal == total[colum])
                {
                   arrmaxim[row] = colum;
                   row++;
