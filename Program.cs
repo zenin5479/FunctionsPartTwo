@@ -484,7 +484,7 @@ namespace FunctionsPartTwo
             return maxamount;
          }
 
-         int maxamount = MaxSumArray(countelements);
+         int maxsum = MaxSumArray(countelements);
 
          int MaxIndexArray(int[] total, int maxim)
          {
@@ -515,14 +515,14 @@ namespace FunctionsPartTwo
                colum++;
             }
 
-            int indexmax = arrmaxim[0];
+            int maxindex = arrmaxim[0];
             int minindex = arrmaxim[0];
             int column = 0;
             while (column < arrmaxim.Length)
             {
-               if (indexmax < arrmaxim[column])
+               if (maxindex < arrmaxim[column])
                {
-                  indexmax = arrmaxim[column];
+                  maxindex = arrmaxim[column];
                }
 
                if (minindex > arrmaxim[column])
@@ -533,12 +533,12 @@ namespace FunctionsPartTwo
                column++;
             }
 
-            Console.WriteLine("Максимальный индекс равен: {0}", indexmax);
+            Console.WriteLine("Максимальный индекс равен: {0}", maxindex);
             Console.WriteLine("Минимальный индекс равен: {0}", minindex);
             return minindex;
          }
 
-         int tyr = MaxIndexArray(countelements, maxamount);
+         int tyr = MaxIndexArray(countelements, maxsum);
 
          OutputtingArray(arrayarrays[tyr]);
 
