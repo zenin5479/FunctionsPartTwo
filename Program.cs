@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Linq;
 
 // Функции продолжение
 // Задача: Задайте массив заполненный случайными положительными трёхзначными числами
@@ -499,12 +498,12 @@ namespace FunctionsPartTwo
 
          int indexminarray = MinIndexArray(countelements, maxsum);
 
-         
 
-         Console.WriteLine("Массив с наибольшей суммой элементов и наименьшим индексом массива массивов: [{0}][{1}]",
-            indexminarray, arrayarrays[indexminarray].Length);
+
+         Console.WriteLine("Массив с наибольшей суммой элементов - {0} и наименьшим индексом массива массивов - [{1}]",
+            countelements[indexminarray], indexminarray);
          OutputtingArray(arrayarrays[indexminarray]);
-         Console.WriteLine("Сумма элементов: {0}", countelements[indexminarray]);
+
 
 
 
