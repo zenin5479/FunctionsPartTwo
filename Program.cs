@@ -513,19 +513,6 @@ namespace FunctionsPartTwo
                colum++;
             }
 
-
-            //int colums = 0;
-            //int minindex = arrmaxim[0];
-            //while (colums < arrmaxim.Length)
-            //{
-            //   if (minindex < arrmaxim[colums])
-            //   {
-            //      minindex = arrmaxim[colums];
-            //   }
-
-            //   colums++;
-            //}
-
             // Поиск максимального и минимального элемента массива
             // Cчитаем, что максимум - это первый элемент массива
             int indexmax = arrmaxim[0];
