@@ -535,6 +535,22 @@ namespace FunctionsPartTwo
 
          OutputtingArray(arrayarrays[indexminarray]);
 
+         Console.WriteLine("Массив с наибольшей суммой элементов и наименьшим индексом массива массивов: [{0}][{1}]",
+            indexminarray, arrayarrays[indexminarray].Length);
+         Console.WriteLine("Массив [{0}][{1}]", indexminarray, arrayarrays[indexminarray].Length);
+         int с = 0;
+         while (с < arrayarrays[indexminarray].Length)
+         {
+            amount += arrayarrays[indexminarray][с];
+            Console.Write("{0} ", arrayarrays[indexminarray][с]);
+            с++;
+         }
+
+         Console.WriteLine();
+         Console.WriteLine("Сумма элементов: {0}", amount);
+
+
+
          Console.ReadKey();
       }
    }
