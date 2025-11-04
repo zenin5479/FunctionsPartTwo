@@ -516,9 +516,9 @@ namespace FunctionsPartTwo
             int minindex = -1;
             int colums = 0;
             int rows = 0;
-            while (colums < totalel.Length)
+            while (colums < arrmaxim.Length)
             {
-               if (maxim == totalel[colums])
+               if (maxim == arrmaxim[colums])
                {
                   arrmaxim[rows] = colums;
                   rows++;
