@@ -406,32 +406,32 @@ namespace FunctionsPartTwo
 
             Console.WriteLine("]");
          }
-         int[][] arrayarrays = new int[4][];
+         int[][] arrayarrays = new int[5][];
          arrayarrays[0] = new[] { 8, 8, 9 };
          arrayarrays[1] = new[] { 4, 5, 6, 7 };
          arrayarrays[2] = new[] { 10, 14 };
          arrayarrays[3] = new[] { 1, 3, 6, 7, 8 };
          arrayarrays[4] = new[] { 1, 2, 3, 4, 5, 8 };
          int[] countelements = new int[arrayarrays.Length];
-         int x = 0;
+         int l = 0;
          int amount = 0;
          Console.WriteLine("Массив массивов [{0}][]:", arrayarrays.Length);
-         while (x < arrayarrays.Length)
+         while (l < arrayarrays.Length)
          {
-            Console.WriteLine("Массив [{0}][{1}]", x, arrayarrays[x].Length);
+            Console.WriteLine("Массив [{0}][{1}]", l, arrayarrays[l].Length);
             int z = 0;
-            while (z < arrayarrays[x].Length)
+            while (z < arrayarrays[l].Length)
             {
-               amount += arrayarrays[x][z];
-               Console.Write("{0} ", arrayarrays[x][z]);
+               amount += arrayarrays[l][z];
+               Console.Write("{0} ", arrayarrays[l][z]);
                z++;
             }
 
             Console.WriteLine();
             Console.WriteLine("Сумма элементов: {0}", amount);
-            countelements[x] = amount;
+            countelements[l] = amount;
             amount = 0;
-            x++;
+            l++;
          }
 
          int MaxSumArray(int[] arrayamounts)
@@ -449,7 +449,7 @@ namespace FunctionsPartTwo
                column++;
             }
 
-            Console.WriteLine(maxamount);
+            //Console.WriteLine(maxamount);
             return maxamount;
          }
 
