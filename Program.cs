@@ -547,8 +547,8 @@ namespace FunctionsPartTwo
                column++;
             }
 
-            Console.WriteLine("Максимум равен: {0}", indexmax);
-            Console.WriteLine("Минимум равен: {0}", minindex);
+            Console.WriteLine("Максимальный индекс равен: {0}", indexmax);
+            Console.WriteLine("Минимальный индекс равен: {0}", minindex);
          }
 
          MaxIndexArray(totalelements, max);
