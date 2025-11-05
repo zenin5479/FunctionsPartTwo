@@ -421,6 +421,7 @@ namespace FunctionsPartTwo
             {
                amount += arrayarrays[l][z];
                // Заменить на OutputtingArray
+
                Console.Write("{0} ", arrayarrays[l][z]);
                z++;
             }
