@@ -416,7 +416,6 @@ namespace FunctionsPartTwo
          {
             Console.WriteLine("Массив [{0}][{1}]", l, arrayarrays[l].Length);
             int z = 0;
-
             while (z < arrayarrays[l].Length)
             {
                amount += arrayarrays[l][z];
