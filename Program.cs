@@ -426,8 +426,6 @@ namespace FunctionsPartTwo
             }
 
             OutputtingArray(arrayarrays[l]);
-
-            Console.WriteLine();
             Console.WriteLine("Сумма элементов: {0}", amount);
             countelements[l] = amount;
             amount = 0;
