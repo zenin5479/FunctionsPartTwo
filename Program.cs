@@ -420,7 +420,6 @@ namespace FunctionsPartTwo
             while (z < arrayarrays[l].Length)
             {
                amount += arrayarrays[l][z];
-               //Console.Write("{0} ", arrayarrays[l][z]);
                z++;
             }
 
