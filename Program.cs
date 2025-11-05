@@ -419,6 +419,7 @@ namespace FunctionsPartTwo
 
             while (z < arrayarrays[l].Length)
             {
+               OutputtingArray(arrayarrays[z]);
                amount += arrayarrays[l][z];
                // Заменить на OutputtingArray
 
