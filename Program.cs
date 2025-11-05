@@ -419,13 +419,14 @@ namespace FunctionsPartTwo
 
             while (z < arrayarrays[l].Length)
             {
-               OutputtingArray(arrayarrays[z]);
                amount += arrayarrays[l][z];
                // Заменить на OutputtingArray
 
-               Console.Write("{0} ", arrayarrays[l][z]);
+               //Console.Write("{0} ", arrayarrays[l][z]);
                z++;
             }
+
+            OutputtingArray(arrayarrays[z]);
 
             Console.WriteLine();
             Console.WriteLine("Сумма элементов: {0}", amount);
